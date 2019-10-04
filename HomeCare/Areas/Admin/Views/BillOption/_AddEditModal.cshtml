@@ -1,0 +1,88 @@
+﻿<div id="modalBillOption" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="btnClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Bill Options Detail</h4>
+            </div>
+            <div class="modal-body">
+                <div id="billoption-form">
+                    <form class="form-horizontal" role="form" id="frmBillOption">
+                        <div class="form-group">
+                            <input type="hidden" id="BillOptionId" value="0" />
+                            <label for="txtWorkinghours" class="col-sm-3 control-label no-padding-right">Workinghours</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtWorkinghours" class="form-control" id="txtWorkinghours" placeholder="1h or 2h or ...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAcreage" class="col-sm-3 control-label no-padding-right">Acreage  (m<sup>2</sup>)</label>
+                            <div class="col-sm-9">
+                                <input type="number" id="txtAcreage" class="form-control" name="txtAcreage" placeholder="1 square metre or ...">                               
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtRooms" class="col-sm-3 control-label no-padding-right">Rooms</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="txtRooms" class="form-control" id="txtRooms">                             
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPrice" class="col-sm-3 control-label no-padding-right">Price  (vnd)</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="txtPrice" class="form-control" id="txtPrice">                                
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtCreatedDate" class="col-sm-3 control-label no-padding-right">CreatedDate</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtCreatedDate" class="form-control" id="txtCreatedDate">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtModifiedDate" class="col-sm-3 control-label no-padding-right">ModifiedDate</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtModifiedDate" class="form-control" id="txtModifiedDate">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtNumberHelper" class="col-sm-3 control-label no-padding-right">NumberHelper</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" multiple id="txtNumberHelper"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ckStatus" class="col-sm-3 control-label no-padding-right">Status</label>
+                            <div class="col-sm-9">
+                                <div class="checkbox" style="border-style:none; padding-top: 8px">
+                                    <label>
+                                        <input type="checkbox" id="ckStatus">
+                                        <span class="text">Active.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancel" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="btnSave" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- Select Helper Number -->
+<script id="table-template-helpernumber" type="x-tmpl-mustache">
+    <option value="{{helpernumberId}}">
+        {{helpernumberamount}}
+    </option>
+</script>

@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles {
+
+}
+
+@section Scripts {
+    <script src="~/customer-side/controller/login/index.js"></script>
+    <script>
+        loginController.login();
+    </script>
+}
+
+
+
+
+<!-- Main Container -->
+<section class="main-container col1-layout">
+    <div class="main container">
+        <div class="page-content">
+            <div class="account-login">
+                <div class="col-md-3 col-sm-2"></div>
+                <div class="col-md-6 col-sm-8">
+                    <div class="single-input p-bottom50 clearfix">
+                        <form id="frmLogin">
+                            @Html.AntiForgeryToken()
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="check-title">
+                                        <h2>Customer Login</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+
+                                </div>
+                                <div class="col-sm-6">
+
+                                </div>
+                                <div class="col-xs-12" style="margin-top:20px">
+                                    <label>UserName:</label>
+                                    <div class="input-text">
+                                        <input id="txtUserName" type="text" name="txtUserName" placeholder="Username" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="margin-top:20px">
+                                    <label>Password:</label>
+                                    <div class="input-text">
+                                        <input id="txtPassword" type="password" name="txtPassword" placeholder="Password" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+
+                                </div>
+                                <div class="col-sm-6">
+
+                                </div>
+                                <div class="col-xs-6" style="margin-top:30px">
+                                    <div class="billing-checkbox">
+                                        
+                                    </div>
+                                    <div class="submit-text" style="margin-top:25px">
+                                        <button id="btnLogin" class="button"><i class="fa fa-user"></i>&nbsp; <span>Login</span></button>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6" style="margin-top:20px; padding-left: 138px">
+                                    <div>
+                                        Don't have an acount!
+                                    </div>
+                                    <div class="submit-text" style="margin-top:15px">
+                                        <button id="btnRegister" style="margin-left: 8px" class="button"><i class="fa fa-user"></i>&nbsp; <span>Register</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main Container End -->
+<!-- service section -->
+<div class="jtv-service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12 ">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+        </div>
+    </div>
+</div>

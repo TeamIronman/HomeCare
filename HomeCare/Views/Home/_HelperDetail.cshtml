@@ -1,0 +1,74 @@
+﻿<div id="modalHelperDetail" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="btnHDClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Helper Detail</h4>
+            </div>
+            <div class="modal-body">
+                <div id="helperdetail-form">
+                    <form class="form-horizontal" role="form" id="formhelperdetail">
+                        <div class="form-group">
+                            <input type="hidden" id="HeId"/>
+                            <label for="txtHDFullName" class="col-sm-3 control-label no-padding-right">FullName</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtHDFullName" class="form-control" id="txtHDFullName" placeholder="FullName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtHDEmail" class="col-sm-3 control-label no-padding-right">Email</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="txtHDEmail" class="form-control" name="txtHDEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtHDPhoneNumber" class="col-sm-3 control-label no-padding-right">PhoneNumber</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtHDPhoneNumber" class="form-control" id="txtHDPhoneNumber" placeholder="PhoneNumber">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtHDBirthDay" class="col-sm-3 control-label no-padding-right">BirthDay</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtHDBirthDay" class="form-control" id="txtHDBirthDay" placeholder="BirthDay">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtHDAddress" class="col-sm-3 control-label no-padding-right">Address</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtHDAddress" class="form-control" id="txtHDAddress" placeholder="Address">
+                            </div>
+                        </div>
+
+                        @*<div class="form-group">
+                                <label for="txtDescription" class="col-sm-3 control-label no-padding-right">Description</label>
+                                <div class="col-sm-9">
+                                    <textarea rows="3" name="txtDescription" class="form-control" id="txtDescription" placeholder="Description"></textarea>
+                                </div>
+                            </div>*@
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                @*<div class="checkbox" style="border-style:none">
+                                        <label>
+                                            <input type="checkbox" id="ckStatusM">
+                                            <span class="text">Active.</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="ckShowHomeM">
+                                            <span class="text">Show on home.</span>
+                                        </label>
+                                    </div>*@
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnHDCancel" class="btn btn-default" data-dismiss="modal">Close</button>
+                @*<button type="button" id="btnSave" class="btn btn-primary">Save changes</button>*@
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

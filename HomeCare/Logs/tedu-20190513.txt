@@ -1,0 +1,1202 @@
+2019-05-13T09:28:05.7382521+07:00 0HLMN9AGNC61G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/   (ca22a1cb)
+2019-05-13T09:28:05.7382357+07:00 0HLMN9AGNC61H:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:23450/  0 (ca22a1cb)
+2019-05-13T09:28:05.7601134+07:00 0HLMN9AGNC61H:00000001 [INF] Request finished in 28.4878ms 200  (791a596a)
+2019-05-13T09:28:06.5360404+07:00 0HLMN9AGNC61G:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Login\", area = \"\"}". Executing action "HomeCare.Controllers.LoginController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:28:06.6098124+07:00 0HLMN9AGNC61G:00000001 [INF] Executing action method "HomeCare.Controllers.LoginController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:28:06.6163579+07:00 0HLMN9AGNC61G:00000001 [INF] Executed action method "HomeCare.Controllers.LoginController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5969ms. (50a9e262)
+2019-05-13T09:28:09.0062600+07:00 0HLMN9AGNC61G:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:28:09.4197721+07:00 0HLMN9AGNC61G:00000001 [INF] Executed ViewResult - view "Index" executed in 2794.5839ms. (f66409e9)
+2019-05-13T09:28:09.4220050+07:00 0HLMN9AGNC61G:00000001 [INF] Executed action "HomeCare.Controllers.LoginController.Index (HomeCare)" in 2883.9453ms (afa2e885)
+2019-05-13T09:28:09.4363956+07:00 0HLMN9AGNC61G:00000001 [INF] Request finished in 3706.7013ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:28:09.8408718+07:00 0HLMN9AGNC61H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/lib/bootbox/bootbox.js   (ca22a1cb)
+2019-05-13T09:28:10.0704522+07:00 0HLMN9AGNC61H:00000002 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2019-05-13T09:28:10.0744986+07:00 0HLMN9AGNC61H:00000002 [INF] Request finished in 233.266ms 304 application/javascript (791a596a)
+2019-05-13T09:28:17.5579907+07:00 0HLMN9AGNC61G:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44362/login/login application/x-www-form-urlencoded; charset=UTF-8 34 (ca22a1cb)
+2019-05-13T09:28:17.5754418+07:00 0HLMN9AGNC61G:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Login\", area = \"\"}". Executing action "HomeCare.Controllers.LoginController.Login (HomeCare)" (a44c0341)
+2019-05-13T09:28:17.6397907+07:00 0HLMN9AGNC61G:00000002 [INF] Executing action method "HomeCare.Controllers.LoginController.Login (HomeCare)" with arguments (["HomeCare.Application.ViewModels.Customer.CuLoginViewModel"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:17.6890144+07:00 0HLMN9AGNC61G:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:17.8737186+07:00 0HLMN9AGNC61G:00000002 [INF] Executed DbCommand ("79"ms) [Parameters=["@__CuVM_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppCustomers] AS [x]
+WHERE [x].[UserName] = @__CuVM_UserName_0" (0723d8ff)
+2019-05-13T09:28:18.0086154+07:00 0HLMN9AGNC61G:00000002 [INF] Executed action method "HomeCare.Controllers.LoginController.Login (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 367.0189ms. (50a9e262)
+2019-05-13T09:28:18.0139710+07:00 0HLMN9AGNC61G:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2019-05-13T09:28:18.0206310+07:00 0HLMN9AGNC61G:00000002 [INF] Executed action "HomeCare.Controllers.LoginController.Login (HomeCare)" in 443.2291ms (afa2e885)
+2019-05-13T09:28:18.0248631+07:00 0HLMN9AGNC61G:00000002 [INF] Session started; Key:"0a1747bd-d1f3-0471-ed8d-a0b29b3eb7ae", Id:"4647744d-ccf9-d14d-a0f5-76346a404bb9" (1d7cf8c0)
+2019-05-13T09:28:18.0291414+07:00 0HLMN9AGNC61G:00000002 [INF] Request finished in 470.7443ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:18.0585467+07:00 0HLMN9AGNC61H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Home/Index   (ca22a1cb)
+2019-05-13T09:28:18.0625300+07:00 0HLMN9AGNC61H:00000003 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "HomeCare.Controllers.HomeController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:28:18.0893429+07:00 0HLMN9AGNC61H:00000003 [INF] Executing action method "HomeCare.Controllers.HomeController.Index (HomeCare)" with arguments (["", "1", "7"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:18.0953312+07:00 0HLMN9AGNC61H:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:18.1793705+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("45"ms) [Parameters=["@__customersession_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Bills] AS [x]
+        WHERE (([x].[CustomerId] = @__customersession_Id_0) AND ([x].[Status] = 1)) AND ((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 5)))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:28:18.2076491+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=["@__customersession_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [x]
+WHERE (([x].[CustomerId] = @__customersession_Id_0) AND ([x].[Status] = 1)) AND ((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 5))" (0723d8ff)
+2019-05-13T09:28:18.2476294+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=["@__customersession_Id_0='?' (Size = 450), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (([x].[CustomerId] = @__customersession_Id_0) AND ([x].[Status] = 1)) AND ((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 5))
+ORDER BY [x].[SortOrder]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2019-05-13T09:28:18.3489134+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.4225090+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.4726991+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.4959080+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.5188578+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.5450306+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.5673544+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.5865643+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.6141608+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Number]
+FROM [BillCancelNumbers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.6439352+07:00 0HLMN9AGNC61H:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppCustomers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:18.6529320+07:00 0HLMN9AGNC61H:00000003 [INF] Executed action method "HomeCare.Controllers.HomeController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 561.3613ms. (50a9e262)
+2019-05-13T09:28:18.8660733+07:00 0HLMN9AGNC61H:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:28:19.5868159+07:00 0HLMN9AGNC61H:00000003 [INF] Executed ViewResult - view "Index" executed in 931.3793ms. (f66409e9)
+2019-05-13T09:28:19.5898635+07:00 0HLMN9AGNC61H:00000003 [INF] Executed action "HomeCare.Controllers.HomeController.Index (HomeCare)" in 1524.3861ms (afa2e885)
+2019-05-13T09:28:19.5939730+07:00 0HLMN9AGNC61H:00000003 [INF] Request finished in 1534.1848ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:28:20.1759897+07:00 0HLMN9AGNC61H:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Bill/GetBillOption   (ca22a1cb)
+2019-05-13T09:28:20.1770260+07:00 0HLMN9AGNC61G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Payment/GetPaymentMethod   (ca22a1cb)
+2019-05-13T09:28:20.1808409+07:00 0HLMN9AGNC61G:00000003 [INF] Route matched with "{action = \"GetPaymentMethod\", controller = \"Payment\", area = \"\"}". Executing action "HomeCare.Controllers.PaymentController.GetPaymentMethod (HomeCare)" (a44c0341)
+2019-05-13T09:28:20.1822496+07:00 0HLMN9AGNC61H:00000004 [INF] Route matched with "{action = \"GetBillOption\", controller = \"Bill\", area = \"\"}". Executing action "HomeCare.Controllers.BillController.GetBillOption (HomeCare)" (a44c0341)
+2019-05-13T09:28:20.2167836+07:00 0HLMN9AGNC61G:00000003 [INF] Executing action method "HomeCare.Controllers.PaymentController.GetPaymentMethod (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:28:20.2181950+07:00 0HLMN9AGNC61H:00000004 [INF] Executing action method "HomeCare.Controllers.BillController.GetBillOption (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:28:20.2206291+07:00 0HLMN9AGNC61H:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:20.2221615+07:00 0HLMN9AGNC61G:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:20.2473512+07:00 0HLMN9AGNC61H:00000004 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [b].[Id], [b].[Acreage], [b].[DateCreated], [b].[DateModified], [b].[Price], [b].[Rooms], [b].[Status], [b].[Workinghours]
+FROM [BillOptions] AS [b]" (0723d8ff)
+2019-05-13T09:28:20.2500508+07:00 0HLMN9AGNC61H:00000004 [INF] Executed action method "HomeCare.Controllers.BillController.GetBillOption (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 30.2251ms. (50a9e262)
+2019-05-13T09:28:20.2528730+07:00 0HLMN9AGNC61H:00000004 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[HomeCare.Application.ViewModels.Customer.CustomerBillOptionViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:28:20.2588259+07:00 0HLMN9AGNC61H:00000004 [INF] Executed action "HomeCare.Controllers.BillController.GetBillOption (HomeCare)" in 74.6592ms (afa2e885)
+2019-05-13T09:28:20.2608382+07:00 0HLMN9AGNC61H:00000004 [INF] Request finished in 85.5553ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:20.2959175+07:00 0HLMN9AGNC61G:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name]
+FROM [PaymentMethods] AS [x]" (0723d8ff)
+2019-05-13T09:28:20.3003048+07:00 0HLMN9AGNC61G:00000003 [INF] Executed action method "HomeCare.Controllers.PaymentController.GetPaymentMethod (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 81.5457ms. (50a9e262)
+2019-05-13T09:28:20.3022854+07:00 0HLMN9AGNC61G:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[HomeCare.Application.ViewModels.Customer.PaymentMethodViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:28:20.3060739+07:00 0HLMN9AGNC61G:00000003 [INF] Executed action "HomeCare.Controllers.PaymentController.GetPaymentMethod (HomeCare)" in 123.2459ms (afa2e885)
+2019-05-13T09:28:20.3080472+07:00 0HLMN9AGNC61G:00000003 [INF] Request finished in 132.8357ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:22.5387223+07:00 0HLMN9AGNC61H:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Bill/GetBilltoView?id=29   (ca22a1cb)
+2019-05-13T09:28:22.5421330+07:00 0HLMN9AGNC61H:00000005 [INF] Route matched with "{action = \"GetBilltoView\", controller = \"Bill\", area = \"\"}". Executing action "HomeCare.Controllers.BillController.GetBilltoView (HomeCare)" (a44c0341)
+2019-05-13T09:28:22.5590359+07:00 0HLMN9AGNC61H:00000005 [INF] Executing action method "HomeCare.Controllers.BillController.GetBilltoView (HomeCare)" with arguments (["29"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:22.5621488+07:00 0HLMN9AGNC61H:00000005 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:22.5903886+07:00 0HLMN9AGNC61H:00000005 [INF] Executed DbCommand ("21"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:22.6109007+07:00 0HLMN9AGNC61H:00000005 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:22.6327321+07:00 0HLMN9AGNC61H:00000005 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:22.6352585+07:00 0HLMN9AGNC61H:00000005 [INF] Executed action method "HomeCare.Controllers.BillController.GetBilltoView (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 73.962ms. (50a9e262)
+2019-05-13T09:28:22.6375560+07:00 0HLMN9AGNC61H:00000005 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Customer.CustomerBillDetailViewModel"'. (8a1b66c8)
+2019-05-13T09:28:22.6441853+07:00 0HLMN9AGNC61H:00000005 [INF] Executed action "HomeCare.Controllers.BillController.GetBilltoView (HomeCare)" in 100.1505ms (afa2e885)
+2019-05-13T09:28:22.6466126+07:00 0HLMN9AGNC61H:00000005 [INF] Request finished in 107.6146ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:33.4487289+07:00 0HLMN9AGNC61G:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Helper   (ca22a1cb)
+2019-05-13T09:28:33.4545476+07:00 0HLMN9AGNC61G:00000004 [INF] Route matched with "{area = \"Helper\", action = \"Index\", controller = \"Login\"}". Executing action "HomeCare.Areas.Helper.Controllers.LoginController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:28:33.4774446+07:00 0HLMN9AGNC61G:00000004 [INF] Executing action method "HomeCare.Areas.Helper.Controllers.LoginController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:28:33.4796151+07:00 0HLMN9AGNC61G:00000004 [INF] Executed action method "HomeCare.Areas.Helper.Controllers.LoginController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3314ms. (50a9e262)
+2019-05-13T09:28:33.7706769+07:00 0HLMN9AGNC61G:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:28:34.0271010+07:00 0HLMN9AGNC61G:00000004 [INF] Executed ViewResult - view "Index" executed in 545.1895ms. (f66409e9)
+2019-05-13T09:28:34.0297774+07:00 0HLMN9AGNC61G:00000004 [INF] Executed action "HomeCare.Areas.Helper.Controllers.LoginController.Index (HomeCare)" in 572.7029ms (afa2e885)
+2019-05-13T09:28:34.0324810+07:00 0HLMN9AGNC61G:00000004 [INF] Request finished in 584.5464ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:28:34.1183693+07:00 0HLMN9AGNC61H:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/controller/login/index.js   (ca22a1cb)
+2019-05-13T09:28:34.1800105+07:00 0HLMN9AGNC61H:00000006 [INF] Sending file. Request path: '"/helper-side/controller/login/index.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\controller\login\index.js"' (27b0a520)
+2019-05-13T09:28:34.1837214+07:00 0HLMN9AGNC61H:00000006 [INF] Request finished in 64.3481ms 200 application/javascript (791a596a)
+2019-05-13T09:28:40.5618909+07:00 0HLMN9AGNC61G:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44362/Helper/Login/Login application/x-www-form-urlencoded; charset=UTF-8 32 (ca22a1cb)
+2019-05-13T09:28:40.5659745+07:00 0HLMN9AGNC61G:00000005 [INF] Route matched with "{area = \"Helper\", action = \"Login\", controller = \"Login\"}". Executing action "HomeCare.Areas.Helper.Controllers.LoginController.Login (HomeCare)" (a44c0341)
+2019-05-13T09:28:40.5866788+07:00 0HLMN9AGNC61G:00000005 [INF] Executing action method "HomeCare.Areas.Helper.Controllers.LoginController.Login (HomeCare)" with arguments (["HomeCare.Application.ViewModels.Helper.HeLoginViewModel"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:40.5904309+07:00 0HLMN9AGNC61G:00000005 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:40.6372967+07:00 0HLMN9AGNC61G:00000005 [INF] Executed DbCommand ("35"ms) [Parameters=["@__HeVM_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[IDcard], [x].[Password], [x].[Paymoney], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppHelpers] AS [x]
+WHERE [x].[UserName] = @__HeVM_UserName_0" (0723d8ff)
+2019-05-13T09:28:40.6534567+07:00 0HLMN9AGNC61G:00000005 [INF] Executed action method "HomeCare.Areas.Helper.Controllers.LoginController.Login (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 64.4367ms. (50a9e262)
+2019-05-13T09:28:40.6557378+07:00 0HLMN9AGNC61G:00000005 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2019-05-13T09:28:40.6579932+07:00 0HLMN9AGNC61G:00000005 [INF] Executed action "HomeCare.Areas.Helper.Controllers.LoginController.Login (HomeCare)" in 89.9083ms (afa2e885)
+2019-05-13T09:28:40.6615433+07:00 0HLMN9AGNC61G:00000005 [INF] Request finished in 99.3154ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:40.6822742+07:00 0HLMN9AGNC61H:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Helper/Home/Index   (ca22a1cb)
+2019-05-13T09:28:40.6899200+07:00 0HLMN9AGNC61H:00000007 [INF] Route matched with "{area = \"Helper\", action = \"Index\", controller = \"Home\"}". Executing action "HomeCare.Areas.Helper.Controllers.HomeController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:28:40.7118473+07:00 0HLMN9AGNC61H:00000007 [INF] Executing action method "HomeCare.Areas.Helper.Controllers.HomeController.Index (HomeCare)" with arguments (["", "1", "7"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:40.7177109+07:00 0HLMN9AGNC61H:00000007 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:40.7472460+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Bills] AS [x]
+        WHERE ([x].[BillStatus] = 0) AND ([x].[Status] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:28:40.7731822+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [x]
+WHERE ([x].[BillStatus] = 0) AND ([x].[Status] = 1)" (0723d8ff)
+2019-05-13T09:28:40.8012196+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("21"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE ([x].[BillStatus] = 0) AND ([x].[Status] = 1)
+ORDER BY [x].[SortOrder]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:28:40.8255593+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("22"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.8483866+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("20"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.8712001+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.8920758+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.9128260+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.9351118+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("20"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.9557600+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.9759806+07:00 0HLMN9AGNC61H:00000007 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:40.9780181+07:00 0HLMN9AGNC61H:00000007 [INF] Executed action method "HomeCare.Areas.Helper.Controllers.HomeController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 264.4221ms. (50a9e262)
+2019-05-13T09:28:41.1344218+07:00 0HLMN9AGNC61H:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:28:41.4630754+07:00 0HLMN9AGNC61H:00000007 [INF] Executed ViewResult - view "Index" executed in 482.7088ms. (f66409e9)
+2019-05-13T09:28:41.4662000+07:00 0HLMN9AGNC61H:00000007 [INF] Executed action "HomeCare.Areas.Helper.Controllers.HomeController.Index (HomeCare)" in 773.4406ms (afa2e885)
+2019-05-13T09:28:41.4685280+07:00 0HLMN9AGNC61H:00000007 [INF] Request finished in 786.9156ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:28:41.4854465+07:00 0HLMN9AGNC61G:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/controller/home/index.js?v=kHrLr3OKftZxTYnDIK_iqmKOTS7_AJkGaQ98TNdCQi4   (ca22a1cb)
+2019-05-13T09:28:41.4964433+07:00 0HLMN9AGNC61G:00000006 [INF] Sending file. Request path: '"/helper-side/controller/home/index.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\controller\home\index.js"' (27b0a520)
+2019-05-13T09:28:41.5053606+07:00 0HLMN9AGNC61G:00000006 [INF] Request finished in 20.1368ms 200 application/javascript (791a596a)
+2019-05-13T09:28:45.4500184+07:00 0HLMN9AGNC61H:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Helper/Bill/GetById?id=24   (ca22a1cb)
+2019-05-13T09:28:45.4532227+07:00 0HLMN9AGNC61H:00000008 [INF] Route matched with "{area = \"Helper\", action = \"GetById\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:28:45.4725922+07:00 0HLMN9AGNC61H:00000008 [INF] Executing action method "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)" with arguments (["24"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:45.4758371+07:00 0HLMN9AGNC61H:00000008 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:45.5008766+07:00 0HLMN9AGNC61H:00000008 [INF] Executed DbCommand ("22"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:45.5249033+07:00 0HLMN9AGNC61H:00000008 [INF] Executed DbCommand ("21"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:45.5458261+07:00 0HLMN9AGNC61H:00000008 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:45.5710201+07:00 0HLMN9AGNC61H:00000008 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[IDcard], [x].[Password], [x].[Paymoney], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppHelpers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:45.5915464+07:00 0HLMN9AGNC61H:00000008 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Number]
+FROM [BillCancelNumbers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:45.5949554+07:00 0HLMN9AGNC61H:00000008 [INF] Executed action method "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 119.5689ms. (50a9e262)
+2019-05-13T09:28:45.5971580+07:00 0HLMN9AGNC61H:00000008 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Helper.HelperBillViewModel"'. (8a1b66c8)
+2019-05-13T09:28:45.6051326+07:00 0HLMN9AGNC61H:00000008 [INF] Executed action "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)" in 149.6795ms (afa2e885)
+2019-05-13T09:28:45.6079920+07:00 0HLMN9AGNC61H:00000008 [INF] Request finished in 157.2016ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:51.8389511+07:00 0HLMN9AGNC61G:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Helper/Bill/GetById?id=24   (ca22a1cb)
+2019-05-13T09:28:51.8411464+07:00 0HLMN9AGNC61G:00000007 [INF] Route matched with "{area = \"Helper\", action = \"GetById\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:28:51.8583896+07:00 0HLMN9AGNC61G:00000007 [INF] Executing action method "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)" with arguments (["24"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:51.8605755+07:00 0HLMN9AGNC61G:00000007 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:51.8812797+07:00 0HLMN9AGNC61G:00000007 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:51.9007966+07:00 0HLMN9AGNC61G:00000007 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:51.9212252+07:00 0HLMN9AGNC61G:00000007 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:51.9407555+07:00 0HLMN9AGNC61G:00000007 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[IDcard], [x].[Password], [x].[Paymoney], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppHelpers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:51.9611589+07:00 0HLMN9AGNC61G:00000007 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Number]
+FROM [BillCancelNumbers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:51.9634082+07:00 0HLMN9AGNC61G:00000007 [INF] Executed action method "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 102.9063ms. (50a9e262)
+2019-05-13T09:28:51.9660360+07:00 0HLMN9AGNC61G:00000007 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Helper.HelperBillViewModel"'. (8a1b66c8)
+2019-05-13T09:28:51.9677321+07:00 0HLMN9AGNC61G:00000007 [INF] Executed action "HomeCare.Areas.Helper.Controllers.BillController.GetById (HomeCare)" in 124.9956ms (afa2e885)
+2019-05-13T09:28:51.9695715+07:00 0HLMN9AGNC61G:00000007 [INF] Request finished in 130.6375ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:28:57.3736353+07:00 0HLMN9AGNC61H:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Helper/Bill/GetBillStatus?id=24   (ca22a1cb)
+2019-05-13T09:28:57.3768032+07:00 0HLMN9AGNC61H:00000009 [INF] Route matched with "{area = \"Helper\", action = \"GetBillStatus\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Helper.Controllers.BillController.GetBillStatus (HomeCare)" (a44c0341)
+2019-05-13T09:28:57.3929822+07:00 0HLMN9AGNC61H:00000009 [INF] Executing action method "HomeCare.Areas.Helper.Controllers.BillController.GetBillStatus (HomeCare)" with arguments (["24"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:28:57.3958117+07:00 0HLMN9AGNC61H:00000009 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:28:57.4174528+07:00 0HLMN9AGNC61H:00000009 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:28:57.4197251+07:00 0HLMN9AGNC61H:00000009 [INF] Executed action method "HomeCare.Areas.Helper.Controllers.BillController.GetBillStatus (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 24.7152ms. (50a9e262)
+2019-05-13T09:28:57.4218464+07:00 0HLMN9AGNC61H:00000009 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2019-05-13T09:28:57.4239618+07:00 0HLMN9AGNC61H:00000009 [INF] Executed action "HomeCare.Areas.Helper.Controllers.BillController.GetBillStatus (HomeCare)" in 45.2047ms (afa2e885)
+2019-05-13T09:28:57.4263325+07:00 0HLMN9AGNC61H:00000009 [INF] Request finished in 52.5109ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:17.7197176+07:00 0HLMN9AGNC61G:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin   (ca22a1cb)
+2019-05-13T09:29:17.7233698+07:00 0HLMN9AGNC61G:00000008 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"LoginLogout\"}". Executing action "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:29:17.7441642+07:00 0HLMN9AGNC61G:00000008 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:29:17.7464868+07:00 0HLMN9AGNC61G:00000008 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2698ms. (50a9e262)
+2019-05-13T09:29:18.0657592+07:00 0HLMN9AGNC61G:00000008 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:29:18.0892091+07:00 0HLMN9AGNC61G:00000008 [INF] Executed ViewResult - view "Index" executed in 340.6969ms. (f66409e9)
+2019-05-13T09:29:18.0915313+07:00 0HLMN9AGNC61G:00000008 [INF] Executed action "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Index (HomeCare)" in 365.9201ms (afa2e885)
+2019-05-13T09:29:18.0940308+07:00 0HLMN9AGNC61G:00000008 [INF] Request finished in 375.5402ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:29:18.4033892+07:00 0HLMN9AGNC61H:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/login/index.js   (ca22a1cb)
+2019-05-13T09:29:18.4054481+07:00 0HLMN9AGNC61H:0000000A [INF] The file "/admin-side/controller/login/index.js" was not modified (f1f8d725)
+2019-05-13T09:29:18.4081631+07:00 0HLMN9AGNC61H:0000000A [INF] Request finished in 4.1678ms 304 application/javascript (791a596a)
+2019-05-13T09:29:18.4166111+07:00 0HLMN9AGNC61G:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3   (ca22a1cb)
+2019-05-13T09:29:18.4633726+07:00 0HLMN9AGNC61G:00000009 [INF] Sending file. Request path: '"/admin-side/template/vendors/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2019-05-13T09:29:18.4695484+07:00 0HLMN9AGNC61G:00000009 [INF] Request finished in 51.17ms 200 font/woff2 (791a596a)
+2019-05-13T09:29:18.4813856+07:00 0HLMN9AGNC61H:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44362/favicon.ico   (ca22a1cb)
+2019-05-13T09:29:18.5029053+07:00 0HLMN9AGNC61H:0000000B [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\favicon.ico"' (27b0a520)
+2019-05-13T09:29:18.5051378+07:00 0HLMN9AGNC61H:0000000B [INF] Request finished in 23.5063ms 200 image/x-icon (791a596a)
+2019-05-13T09:29:26.6380482+07:00 0HLMN9AGNC61G:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:44362/Admin/LoginLogout/Login application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-05-13T09:29:26.6418904+07:00 0HLMN9AGNC61G:0000000A [INF] Route matched with "{area = \"Admin\", action = \"Login\", controller = \"LoginLogout\"}". Executing action "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Login (HomeCare)" (a44c0341)
+2019-05-13T09:29:26.6636402+07:00 0HLMN9AGNC61G:0000000A [INF] Executing action method "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Login (HomeCare)" with arguments (["HomeCare.Application.ViewModels.Admin.AdModLoginViewModel"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:26.6681045+07:00 0HLMN9AGNC61G:0000000A [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:26.6986801+07:00 0HLMN9AGNC61G:0000000A [INF] Executed DbCommand ("22"ms) [Parameters=["@__vm_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[UserName] = @__vm_UserName_0" (0723d8ff)
+2019-05-13T09:29:26.7106311+07:00 0HLMN9AGNC61G:0000000A [INF] Executed action method "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Login (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 44.7704ms. (50a9e262)
+2019-05-13T09:29:26.7128312+07:00 0HLMN9AGNC61G:0000000A [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2019-05-13T09:29:26.7156483+07:00 0HLMN9AGNC61G:0000000A [INF] Executed action "HomeCare.Areas.Admin.Controllers.LoginLogoutController.Login (HomeCare)" in 71.0592ms (afa2e885)
+2019-05-13T09:29:26.7182805+07:00 0HLMN9AGNC61G:0000000A [INF] Request finished in 79.7814ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:27.7544221+07:00 0HLMN9AGNC61H:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Home/Index   (ca22a1cb)
+2019-05-13T09:29:27.7576476+07:00 0HLMN9AGNC61H:0000000C [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "HomeCare.Areas.Admin.Controllers.HomeController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:29:27.7765288+07:00 0HLMN9AGNC61H:0000000C [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HomeController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:29:27.7784831+07:00 0HLMN9AGNC61H:0000000C [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HomeController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2694ms. (50a9e262)
+2019-05-13T09:29:27.9309969+07:00 0HLMN9AGNC61H:0000000C [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:29:28.1607890+07:00 0HLMN9AGNC61H:0000000C [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:28.2389568+07:00 0HLMN9AGNC61H:0000000C [INF] Executed DbCommand ("72"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:28.4562791+07:00 0HLMN9AGNC61H:0000000C [INF] Executed DbCommand ("47"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:29:28.5571710+07:00 0HLMN9AGNC61H:0000000C [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:29:28.7916692+07:00 0HLMN9AGNC61H:0000000C [INF] Executed DbCommand ("37"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:28.9417478+07:00 0HLMN9AGNC61H:0000000C [INF] Executed ViewResult - view "Index" executed in 1161.3829ms. (f66409e9)
+2019-05-13T09:29:28.9508613+07:00 0HLMN9AGNC61H:0000000C [INF] Executed action "HomeCare.Areas.Admin.Controllers.HomeController.Index (HomeCare)" in 1190.6858ms (afa2e885)
+2019-05-13T09:29:28.9555706+07:00 0HLMN9AGNC61H:0000000C [INF] Request finished in 1201.3619ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:29:28.9815145+07:00 0HLMN9AGNC61G:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2019-05-13T09:29:28.9826527+07:00 0HLMN9AGNC61H:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/production/images/img.jpg   (ca22a1cb)
+2019-05-13T09:29:29.1307098+07:00 0HLMN9AGNC61I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/nprogress/nprogress.js   (ca22a1cb)
+2019-05-13T09:29:29.1920305+07:00 0HLMN9AGNC61J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/fastclick/lib/fastclick.js   (ca22a1cb)
+2019-05-13T09:29:29.2080432+07:00 0HLMN9AGNC61K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/Chart.js/dist/Chart.min.js   (ca22a1cb)
+2019-05-13T09:29:29.2183696+07:00 0HLMN9AGNC61G:0000000B [INF] Sending file. Request path: '"/admin-side/template/vendors/bootstrap/dist/js/bootstrap.min.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\bootstrap\dist\js\bootstrap.min.js"' (27b0a520)
+2019-05-13T09:29:29.2193251+07:00 0HLMN9AGNC61L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/jquery-sparkline/dist/jquery.sparkline.min.js   (ca22a1cb)
+2019-05-13T09:29:29.2205606+07:00 0HLMN9AGNC61H:0000000D [INF] Sending file. Request path: '"/admin-side/template/production/images/img.jpg"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\production\images\img.jpg"' (27b0a520)
+2019-05-13T09:29:29.2239042+07:00 0HLMN9AGNC61G:0000000B [INF] Request finished in 241.0554ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.2252856+07:00 0HLMN9AGNC61H:0000000D [INF] Request finished in 242.3481ms 200 image/jpeg (791a596a)
+2019-05-13T09:29:29.2270890+07:00 0HLMN9AGNC61M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-05-13T09:29:29.3056090+07:00 0HLMN9AGNC61N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/moment/min/moment.min.js   (ca22a1cb)
+2019-05-13T09:29:29.3082167+07:00 0HLMN9AGNC61O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/lib/colors-master/js/colors.js   (ca22a1cb)
+2019-05-13T09:29:29.3178339+07:00 0HLMN9AGNC61P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/build/js/custom.min.js   (ca22a1cb)
+2019-05-13T09:29:29.3214898+07:00 0HLMN9AGNC61Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/template/vendors/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-05-13T09:29:29.3240756+07:00 0HLMN9AGNC61O:00000001 [INF] Sending file. Request path: '"/lib/colors-master/js/colors.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\lib\colors-master\js\colors.js"' (27b0a520)
+2019-05-13T09:29:29.3562276+07:00 0HLMN9AGNC61O:00000001 [INF] Request finished in 18.5989ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.3773732+07:00 0HLMN9AGNC61J:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/fastclick/lib/fastclick.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\fastclick\lib\fastclick.js"' (27b0a520)
+2019-05-13T09:29:29.3803358+07:00 0HLMN9AGNC61I:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/nprogress/nprogress.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\nprogress\nprogress.js"' (27b0a520)
+2019-05-13T09:29:29.3821270+07:00 0HLMN9AGNC61J:00000001 [INF] Request finished in 246.2075ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.3828687+07:00 0HLMN9AGNC61I:00000001 [INF] Request finished in 388.6742ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.4844145+07:00 0HLMN9AGNC61Q:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2019-05-13T09:29:29.4899631+07:00 0HLMN9AGNC61Q:00000001 [INF] Request finished in 165.7656ms 200 font/woff2 (791a596a)
+2019-05-13T09:29:29.5360365+07:00 0HLMN9AGNC61M:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-05-13T09:29:29.5411965+07:00 0HLMN9AGNC61M:00000001 [INF] Request finished in 310.703ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.5421286+07:00 0HLMN9AGNC61P:00000001 [INF] Sending file. Request path: '"/admin-side/template/build/js/custom.min.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\build\js\custom.min.js"' (27b0a520)
+2019-05-13T09:29:29.5444924+07:00 0HLMN9AGNC61P:00000001 [INF] Request finished in 233.4417ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.5468741+07:00 0HLMN9AGNC61L:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\jquery-sparkline\dist\jquery.sparkline.min.js"' (27b0a520)
+2019-05-13T09:29:29.5490490+07:00 0HLMN9AGNC61L:00000001 [INF] Request finished in 350.1247ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.5534083+07:00 0HLMN9AGNC61N:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/moment/min/moment.min.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\moment\min\moment.min.js"' (27b0a520)
+2019-05-13T09:29:29.5579484+07:00 0HLMN9AGNC61N:00000001 [INF] Request finished in 326.0845ms 200 application/javascript (791a596a)
+2019-05-13T09:29:29.5743295+07:00 0HLMN9AGNC61K:00000001 [INF] Sending file. Request path: '"/admin-side/template/vendors/Chart.js/dist/Chart.min.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\template\vendors\Chart.js\dist\Chart.min.js"' (27b0a520)
+2019-05-13T09:29:29.5773935+07:00 0HLMN9AGNC61K:00000001 [INF] Request finished in 381.4059ms 200 application/javascript (791a596a)
+2019-05-13T09:29:31.5384844+07:00 0HLMN9AGNC61G:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/bill/index   (ca22a1cb)
+2019-05-13T09:29:31.5432887+07:00 0HLMN9AGNC61G:0000000C [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:29:31.5610095+07:00 0HLMN9AGNC61G:0000000C [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:29:31.5632839+07:00 0HLMN9AGNC61G:0000000C [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3212ms. (50a9e262)
+2019-05-13T09:29:31.7293760+07:00 0HLMN9AGNC61G:0000000C [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:29:32.0477882+07:00 0HLMN9AGNC61G:0000000C [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:32.0738476+07:00 0HLMN9AGNC61G:0000000C [INF] Executed DbCommand ("23"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:32.1052148+07:00 0HLMN9AGNC61G:0000000C [INF] Executed DbCommand ("27"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:29:32.1451654+07:00 0HLMN9AGNC61G:0000000C [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:29:32.1744726+07:00 0HLMN9AGNC61G:0000000C [INF] Executed DbCommand ("25"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:32.1816107+07:00 0HLMN9AGNC61G:0000000C [INF] Executed ViewResult - view "Index" executed in 616.0249ms. (f66409e9)
+2019-05-13T09:29:32.1843151+07:00 0HLMN9AGNC61G:0000000C [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.Index (HomeCare)" in 638.5722ms (afa2e885)
+2019-05-13T09:29:32.1874050+07:00 0HLMN9AGNC61G:0000000C [INF] Request finished in 648.6608ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:29:32.2505085+07:00 0HLMN9AGNC61H:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/bill/index.js   (ca22a1cb)
+2019-05-13T09:29:32.2549167+07:00 0HLMN9AGNC61O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/FixCss/FixTh.css   (ca22a1cb)
+2019-05-13T09:29:32.2903876+07:00 0HLMN9AGNC61O:00000002 [INF] The file "/admin-side/controller/FixCss/FixTh.css" was not modified (f1f8d725)
+2019-05-13T09:29:32.2932513+07:00 0HLMN9AGNC61O:00000002 [INF] Request finished in 37.4149ms 304 text/css (791a596a)
+2019-05-13T09:29:32.3108026+07:00 0HLMN9AGNC61H:0000000E [INF] Sending file. Request path: '"/admin-side/controller/bill/index.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\controller\bill\index.js"' (27b0a520)
+2019-05-13T09:29:32.3139220+07:00 0HLMN9AGNC61H:0000000E [INF] Request finished in 63.0893ms 200 application/javascript (791a596a)
+2019-05-13T09:29:32.4009382+07:00 0HLMN9AGNC61I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetAllPaging?keyword=&workdate=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:29:32.4048249+07:00 0HLMN9AGNC61I:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:29:32.4266312+07:00 0HLMN9AGNC61I:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:32.4323390+07:00 0HLMN9AGNC61I:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:32.4679798+07:00 0HLMN9AGNC61I:00000002 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Bills] AS [x]
+        WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:29:32.4987648+07:00 0HLMN9AGNC61I:00000002 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:29:32.5303530+07:00 0HLMN9AGNC61I:00000002 [INF] Executed DbCommand ("21"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)
+ORDER BY [x].[SortOrder]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:29:32.5356094+07:00 0HLMN9AGNC61I:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 104.9179ms. (50a9e262)
+2019-05-13T09:29:32.5397159+07:00 0HLMN9AGNC61I:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:29:32.5550639+07:00 0HLMN9AGNC61I:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" in 147.8996ms (afa2e885)
+2019-05-13T09:29:32.5571196+07:00 0HLMN9AGNC61I:00000002 [INF] Request finished in 157.2224ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:32.5884139+07:00 0HLMN9AGNC61J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetAllPaging?keyword=&workdate=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:29:32.5907011+07:00 0HLMN9AGNC61J:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:29:32.6132462+07:00 0HLMN9AGNC61J:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:32.6158974+07:00 0HLMN9AGNC61J:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:32.6422566+07:00 0HLMN9AGNC61J:00000002 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Bills] AS [x]
+        WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:29:32.6701719+07:00 0HLMN9AGNC61J:00000002 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:29:32.6938052+07:00 0HLMN9AGNC61J:00000002 [INF] Executed DbCommand ("21"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)
+ORDER BY [x].[SortOrder]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:29:32.6966912+07:00 0HLMN9AGNC61J:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 80.8204ms. (50a9e262)
+2019-05-13T09:29:32.6982447+07:00 0HLMN9AGNC61J:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:29:32.7020504+07:00 0HLMN9AGNC61J:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" in 107.731ms (afa2e885)
+2019-05-13T09:29:32.7058557+07:00 0HLMN9AGNC61J:00000002 [INF] Request finished in 116.0962ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:35.3452383+07:00 0HLMN9AGNC61Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetById?id=28   (ca22a1cb)
+2019-05-13T09:29:35.3494816+07:00 0HLMN9AGNC61Q:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:29:35.3724669+07:00 0HLMN9AGNC61Q:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" with arguments (["28"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:35.3767831+07:00 0HLMN9AGNC61Q:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:35.3996633+07:00 0HLMN9AGNC61Q:00000002 [INF] Executed DbCommand ("20"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:35.4197076+07:00 0HLMN9AGNC61Q:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:35.4399512+07:00 0HLMN9AGNC61Q:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:35.5068915+07:00 0HLMN9AGNC61Q:00000002 [INF] Executed DbCommand ("58"ms) [Parameters=["@__bill_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[BillId], [x].[Cancel], [x].[Firstcheck], [x].[Secondcheck], [x].[Thirdcheck]
+FROM [HelperChecks] AS [x]
+WHERE [x].[BillId] = @__bill_Id_0" (0723d8ff)
+2019-05-13T09:29:35.5230494+07:00 0HLMN9AGNC61Q:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 148.0608ms. (50a9e262)
+2019-05-13T09:29:35.5245693+07:00 0HLMN9AGNC61Q:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Admin.AdminBillViewModel"'. (8a1b66c8)
+2019-05-13T09:29:35.5263212+07:00 0HLMN9AGNC61Q:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" in 175.1956ms (afa2e885)
+2019-05-13T09:29:35.5286532+07:00 0HLMN9AGNC61Q:00000002 [INF] Request finished in 183.6443ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:38.6377525+07:00 0HLMN9AGNC61M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetHelperforBill?helperId=akainu%40gmail.com   (ca22a1cb)
+2019-05-13T09:29:38.6410784+07:00 0HLMN9AGNC61M:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetHelperforBill\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)" (a44c0341)
+2019-05-13T09:29:38.6589119+07:00 0HLMN9AGNC61M:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)" with arguments (["akainu@gmail.com"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:38.6621509+07:00 0HLMN9AGNC61M:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:38.6853503+07:00 0HLMN9AGNC61M:00000002 [INF] Executed DbCommand ("21"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[IDcard], [x].[Password], [x].[Paymoney], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppHelpers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:38.6885998+07:00 0HLMN9AGNC61M:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 27.6286ms. (50a9e262)
+2019-05-13T09:29:38.6909491+07:00 0HLMN9AGNC61M:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Admin.HelperCorrespondingBillViewModel"'. (8a1b66c8)
+2019-05-13T09:29:38.6972775+07:00 0HLMN9AGNC61M:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)" in 53.9911ms (afa2e885)
+2019-05-13T09:29:38.6998740+07:00 0HLMN9AGNC61M:00000002 [INF] Request finished in 61.8158ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:40.6431391+07:00 0HLMN9AGNC61P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetHelperforBill?helperId=akainu%40gmail.com   (ca22a1cb)
+2019-05-13T09:29:40.6452670+07:00 0HLMN9AGNC61P:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetHelperforBill\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)" (a44c0341)
+2019-05-13T09:29:40.6623901+07:00 0HLMN9AGNC61P:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)" with arguments (["akainu@gmail.com"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:40.6650245+07:00 0HLMN9AGNC61P:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:40.6857317+07:00 0HLMN9AGNC61P:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[BirthDay], [x].[CancelBillNumber], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[IDcard], [x].[Password], [x].[Paymoney], [x].[PhoneNumber], [x].[RoleId], [x].[Status], [x].[UserName]
+FROM [AppHelpers] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:40.6882822+07:00 0HLMN9AGNC61P:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 23.6347ms. (50a9e262)
+2019-05-13T09:29:40.6905690+07:00 0HLMN9AGNC61P:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Admin.HelperCorrespondingBillViewModel"'. (8a1b66c8)
+2019-05-13T09:29:40.6927381+07:00 0HLMN9AGNC61P:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetHelperforBill (HomeCare)" in 45.4446ms (afa2e885)
+2019-05-13T09:29:40.6950254+07:00 0HLMN9AGNC61P:00000002 [INF] Request finished in 51.7308ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:42.8605802+07:00 0HLMN9AGNC61L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetById?id=28   (ca22a1cb)
+2019-05-13T09:29:42.8622625+07:00 0HLMN9AGNC61L:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:29:42.8782351+07:00 0HLMN9AGNC61L:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" with arguments (["28"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:42.8807006+07:00 0HLMN9AGNC61L:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:42.8996861+07:00 0HLMN9AGNC61L:00000002 [INF] Executed DbCommand ("16"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:42.9193795+07:00 0HLMN9AGNC61L:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:42.9389117+07:00 0HLMN9AGNC61L:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:29:42.9583167+07:00 0HLMN9AGNC61L:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__bill_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[BillId], [x].[Cancel], [x].[Firstcheck], [x].[Secondcheck], [x].[Thirdcheck]
+FROM [HelperChecks] AS [x]
+WHERE [x].[BillId] = @__bill_Id_0" (0723d8ff)
+2019-05-13T09:29:42.9611600+07:00 0HLMN9AGNC61L:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 80.4644ms. (50a9e262)
+2019-05-13T09:29:42.9629429+07:00 0HLMN9AGNC61L:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Admin.AdminBillViewModel"'. (8a1b66c8)
+2019-05-13T09:29:42.9654489+07:00 0HLMN9AGNC61L:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" in 100.9061ms (afa2e885)
+2019-05-13T09:29:42.9680322+07:00 0HLMN9AGNC61L:00000002 [INF] Request finished in 108.2109ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:56.4172285+07:00 0HLMN9AGNC61N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetAllPaging?keyword=&workdate=04%2F10%2F2019&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:29:56.4195205+07:00 0HLMN9AGNC61N:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:29:56.4368752+07:00 0HLMN9AGNC61N:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" with arguments (["", "04/10/2019", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:56.4391872+07:00 0HLMN9AGNC61N:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:56.4493135+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"where [x].Workday.ToString(\"MM/dd/yyyy\").Equals(__workdate_0)"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.4548386+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"Any()"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.4811912+07:00 0HLMN9AGNC61N:00000002 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Workday]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:29:56.4892268+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"where [x].Workday.ToString(\"MM/dd/yyyy\").Equals(__workdate_0)"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.4921376+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.5161067+07:00 0HLMN9AGNC61N:00000002 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Workday]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:29:56.5226216+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"where [x].Workday.ToString(\"MM/dd/yyyy\").Equals(__workdate_0)"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.5262351+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"Skip(__p_1)"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.5300817+07:00 0HLMN9AGNC61N:00000002 [WRN] The LINQ expression '"Take(__p_2)"' could not be translated and will be evaluated locally. (011792c6)
+2019-05-13T09:29:56.5543141+07:00 0HLMN9AGNC61N:00000002 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)
+ORDER BY [x].[SortOrder]" (0723d8ff)
+2019-05-13T09:29:56.5572176+07:00 0HLMN9AGNC61N:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 118.0818ms. (50a9e262)
+2019-05-13T09:29:56.5597113+07:00 0HLMN9AGNC61N:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:29:56.5618256+07:00 0HLMN9AGNC61N:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" in 140.3206ms (afa2e885)
+2019-05-13T09:29:56.5640013+07:00 0HLMN9AGNC61N:00000002 [INF] Request finished in 146.873ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:29:56.5724000+07:00 0HLMN9AGNC61K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetAllPaging?keyword=&workdate=04%2F10%2F2019&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:29:56.5758280+07:00 0HLMN9AGNC61K:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:29:56.5943179+07:00 0HLMN9AGNC61K:00000002 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" with arguments (["", "04/10/2019", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:29:56.5971729+07:00 0HLMN9AGNC61K:00000002 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:29:56.6173568+07:00 0HLMN9AGNC61K:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Workday]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:29:56.6376304+07:00 0HLMN9AGNC61K:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Workday]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:29:56.6580643+07:00 0HLMN9AGNC61K:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)
+ORDER BY [x].[SortOrder]" (0723d8ff)
+2019-05-13T09:29:56.6609545+07:00 0HLMN9AGNC61K:00000002 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 64.0298ms. (50a9e262)
+2019-05-13T09:29:56.6632026+07:00 0HLMN9AGNC61K:00000002 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:29:56.6658699+07:00 0HLMN9AGNC61K:00000002 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" in 87.7072ms (afa2e885)
+2019-05-13T09:29:56.6684097+07:00 0HLMN9AGNC61K:00000002 [INF] Request finished in 95.6392ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:00.8057284+07:00 0HLMN9AGNC61G:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetAllPaging?keyword=&workdate=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:00.8079621+07:00 0HLMN9AGNC61G:0000000D [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:00.8253656+07:00 0HLMN9AGNC61G:0000000D [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:00.8277980+07:00 0HLMN9AGNC61G:0000000D [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:00.8493027+07:00 0HLMN9AGNC61G:0000000D [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Bills] AS [x]
+        WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:00.8700391+07:00 0HLMN9AGNC61G:0000000D [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:30:00.8894345+07:00 0HLMN9AGNC61G:0000000D [INF] Executed DbCommand ("17"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)
+ORDER BY [x].[SortOrder]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:00.8917079+07:00 0HLMN9AGNC61G:0000000D [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 64.4105ms. (50a9e262)
+2019-05-13T09:30:00.8935313+07:00 0HLMN9AGNC61G:0000000D [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:00.8956277+07:00 0HLMN9AGNC61G:0000000D [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" in 85.7733ms (afa2e885)
+2019-05-13T09:30:00.8978223+07:00 0HLMN9AGNC61G:0000000D [INF] Request finished in 91.9669ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:00.9070069+07:00 0HLMN9AGNC61O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetAllPaging?keyword=&workdate=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:00.9093795+07:00 0HLMN9AGNC61O:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:00.9362248+07:00 0HLMN9AGNC61O:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:00.9388665+07:00 0HLMN9AGNC61O:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:00.9660940+07:00 0HLMN9AGNC61O:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Bills] AS [x]
+        WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:00.9874849+07:00 0HLMN9AGNC61O:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)" (0723d8ff)
+2019-05-13T09:30:01.0077019+07:00 0HLMN9AGNC61O:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE (((([x].[BillStatus] = 0) OR ([x].[BillStatus] = 2)) OR ([x].[BillStatus] = 4)) OR ([x].[BillStatus] = 5)) OR ([x].[BillStatus] = 3)
+ORDER BY [x].[SortOrder]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:01.0103367+07:00 0HLMN9AGNC61O:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 71.8666ms. (50a9e262)
+2019-05-13T09:30:01.0131294+07:00 0HLMN9AGNC61O:00000003 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:01.0152514+07:00 0HLMN9AGNC61O:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetAllPaging (HomeCare)" in 103.9708ms (afa2e885)
+2019-05-13T09:30:01.0173829+07:00 0HLMN9AGNC61O:00000003 [INF] Request finished in 110.1411ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:05.2636317+07:00 0HLMN9AGNC61H:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Bill/GetById?id=28   (ca22a1cb)
+2019-05-13T09:30:05.2658995+07:00 0HLMN9AGNC61H:0000000F [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"Bill\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:30:05.2823240+07:00 0HLMN9AGNC61H:0000000F [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" with arguments (["28"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:05.2846203+07:00 0HLMN9AGNC61H:0000000F [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:05.3044726+07:00 0HLMN9AGNC61H:0000000F [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Apartmentnumber], [x].[BillOptionId], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerEmail], [x].[CustomerId], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HelperId], [x].[PaymentMethodId], [x].[SortOrder], [x].[Starttime], [x].[Status], [x].[Workday], [x].[Workplace]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:05.3239866+07:00 0HLMN9AGNC61H:0000000F [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:05.3437730+07:00 0HLMN9AGNC61H:0000000F [INF] Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[Name]
+FROM [PaymentMethods] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:05.3632924+07:00 0HLMN9AGNC61H:0000000F [INF] Executed DbCommand ("17"ms) [Parameters=["@__bill_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[BillId], [x].[Cancel], [x].[Firstcheck], [x].[Secondcheck], [x].[Thirdcheck]
+FROM [HelperChecks] AS [x]
+WHERE [x].[BillId] = @__bill_Id_0" (0723d8ff)
+2019-05-13T09:30:05.3655512+07:00 0HLMN9AGNC61H:0000000F [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 81.2572ms. (50a9e262)
+2019-05-13T09:30:05.3679434+07:00 0HLMN9AGNC61H:0000000F [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Admin.AdminBillViewModel"'. (8a1b66c8)
+2019-05-13T09:30:05.3700468+07:00 0HLMN9AGNC61H:0000000F [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillController.GetById (HomeCare)" in 102.2124ms (afa2e885)
+2019-05-13T09:30:05.3725117+07:00 0HLMN9AGNC61H:0000000F [INF] Request finished in 108.6682ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:09.3662269+07:00 0HLMN9AGNC61I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/billoption/index   (ca22a1cb)
+2019-05-13T09:30:09.3704538+07:00 0HLMN9AGNC61I:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"BillOption\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillOptionController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:30:09.3899135+07:00 0HLMN9AGNC61I:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillOptionController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:30:09.3927495+07:00 0HLMN9AGNC61I:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillOptionController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3329ms. (50a9e262)
+2019-05-13T09:30:09.5906873+07:00 0HLMN9AGNC61I:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:30:09.7388611+07:00 0HLMN9AGNC61I:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:09.7641394+07:00 0HLMN9AGNC61I:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:09.7904301+07:00 0HLMN9AGNC61I:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:30:09.8184529+07:00 0HLMN9AGNC61I:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:30:09.8445153+07:00 0HLMN9AGNC61I:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:09.8496101+07:00 0HLMN9AGNC61I:00000003 [INF] Executed ViewResult - view "Index" executed in 454.162ms. (f66409e9)
+2019-05-13T09:30:09.8519207+07:00 0HLMN9AGNC61I:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillOptionController.Index (HomeCare)" in 479.3127ms (afa2e885)
+2019-05-13T09:30:09.8553483+07:00 0HLMN9AGNC61I:00000003 [INF] Request finished in 488.1687ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:30:09.8818264+07:00 0HLMN9AGNC61J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/billoption/index.js   (ca22a1cb)
+2019-05-13T09:30:09.9355334+07:00 0HLMN9AGNC61J:00000003 [INF] Sending file. Request path: '"/admin-side/controller/billoption/index.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\controller\billoption\index.js"' (27b0a520)
+2019-05-13T09:30:09.9382145+07:00 0HLMN9AGNC61J:00000003 [INF] Request finished in 55.9038ms 200 application/javascript (791a596a)
+2019-05-13T09:30:09.9730676+07:00 0HLMN9AGNC61Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/BillOption/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:09.9751043+07:00 0HLMN9AGNC61M:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helpernumber/GetAll   (ca22a1cb)
+2019-05-13T09:30:09.9790529+07:00 0HLMN9AGNC61Q:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"BillOption\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:10.0052506+07:00 0HLMN9AGNC61Q:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:10.0092139+07:00 0HLMN9AGNC61M:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Helpernumber\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelpernumberController.GetAll (HomeCare)" (a44c0341)
+2019-05-13T09:30:10.0341790+07:00 0HLMN9AGNC61M:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelpernumberController.GetAll (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:30:10.0376517+07:00 0HLMN9AGNC61Q:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:10.0421861+07:00 0HLMN9AGNC61M:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:10.0768430+07:00 0HLMN9AGNC61Q:00000003 [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BillOptions] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:10.1010360+07:00 0HLMN9AGNC61Q:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [BillOptions] AS [b]" (0723d8ff)
+2019-05-13T09:30:10.1332936+07:00 0HLMN9AGNC61M:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Amount]
+FROM [HelperNumbers] AS [x]" (0723d8ff)
+2019-05-13T09:30:10.1384474+07:00 0HLMN9AGNC61M:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelpernumberController.GetAll (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 101.8353ms. (50a9e262)
+2019-05-13T09:30:10.1409903+07:00 0HLMN9AGNC61M:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[HomeCare.Application.ViewModels.Customer.CuHelperNumberViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:10.1452689+07:00 0HLMN9AGNC61M:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelpernumberController.GetAll (HomeCare)" in 133.9326ms (afa2e885)
+2019-05-13T09:30:10.1477334+07:00 0HLMN9AGNC61M:00000003 [INF] Request finished in 172.3906ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:10.1526503+07:00 0HLMN9AGNC61Q:00000003 [WRN] Query: '"(from BillOption <generated>_2 in DbSet<BillOption> select [<generated>_2]).Skip(__p_0).Take(__p_1)"' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2019-05-13T09:30:10.1823645+07:00 0HLMN9AGNC61Q:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [b].[Id], [b].[Acreage], [b].[DateCreated], [b].[DateModified], [b].[Price], [b].[Rooms], [b].[Status], [b].[Workinghours]
+FROM [BillOptions] AS [b]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:10.1863693+07:00 0HLMN9AGNC61Q:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 178.1094ms. (50a9e262)
+2019-05-13T09:30:10.1890901+07:00 0HLMN9AGNC61Q:00000003 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillOptionViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:10.1983878+07:00 0HLMN9AGNC61Q:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)" in 217.0257ms (afa2e885)
+2019-05-13T09:30:10.2007691+07:00 0HLMN9AGNC61Q:00000003 [INF] Request finished in 227.4491ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:10.2146624+07:00 0HLMN9AGNC61P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/BillOption/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:10.2169503+07:00 0HLMN9AGNC61P:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"BillOption\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:10.2413557+07:00 0HLMN9AGNC61P:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:10.2435513+07:00 0HLMN9AGNC61P:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:10.2676565+07:00 0HLMN9AGNC61P:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BillOptions] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:10.2943337+07:00 0HLMN9AGNC61P:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [BillOptions] AS [b]" (0723d8ff)
+2019-05-13T09:30:10.3164941+07:00 0HLMN9AGNC61P:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [b].[Id], [b].[Acreage], [b].[DateCreated], [b].[DateModified], [b].[Price], [b].[Rooms], [b].[Status], [b].[Workinghours]
+FROM [BillOptions] AS [b]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:10.3208052+07:00 0HLMN9AGNC61P:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 75.32ms. (50a9e262)
+2019-05-13T09:30:10.3240796+07:00 0HLMN9AGNC61P:00000003 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdminBillOptionViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:10.3263362+07:00 0HLMN9AGNC61P:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillOptionController.GetAllPaging (HomeCare)" in 107.219ms (afa2e885)
+2019-05-13T09:30:10.3283127+07:00 0HLMN9AGNC61P:00000003 [INF] Request finished in 113.9045ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:13.9802695+07:00 0HLMN9AGNC61L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/BillOption/GetById?id=17   (ca22a1cb)
+2019-05-13T09:30:13.9837583+07:00 0HLMN9AGNC61L:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"BillOption\"}". Executing action "HomeCare.Areas.Admin.Controllers.BillOptionController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:30:14.0017651+07:00 0HLMN9AGNC61L:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.BillOptionController.GetById (HomeCare)" with arguments (["17"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:14.0059217+07:00 0HLMN9AGNC61L:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:14.0278092+07:00 0HLMN9AGNC61L:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Acreage], [x].[DateCreated], [x].[DateModified], [x].[Price], [x].[Rooms], [x].[Status], [x].[Workinghours]
+FROM [BillOptions] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:14.0767646+07:00 0HLMN9AGNC61L:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[HelperNumberId]
+FROM [BillOptionHelperNumbers] AS [x]
+WHERE [x].[BillOptionId] = @__id_0" (0723d8ff)
+2019-05-13T09:30:14.0809667+07:00 0HLMN9AGNC61L:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.BillOptionController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 76.7284ms. (50a9e262)
+2019-05-13T09:30:14.0835913+07:00 0HLMN9AGNC61L:00000003 [INF] Executing ObjectResult, writing value of type '"HomeCare.Application.ViewModels.Admin.AdminBillOptionViewModel"'. (8a1b66c8)
+2019-05-13T09:30:14.0862155+07:00 0HLMN9AGNC61L:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.BillOptionController.GetById (HomeCare)" in 100.1173ms (afa2e885)
+2019-05-13T09:30:14.0884359+07:00 0HLMN9AGNC61L:00000003 [INF] Request finished in 108.0165ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:22.6733642+07:00 0HLMN9AGNC61N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/helper/index   (ca22a1cb)
+2019-05-13T09:30:22.6787660+07:00 0HLMN9AGNC61N:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:30:22.6970037+07:00 0HLMN9AGNC61N:00000003 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:30:22.7004181+07:00 0HLMN9AGNC61N:00000003 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3584ms. (50a9e262)
+2019-05-13T09:30:22.8581650+07:00 0HLMN9AGNC61N:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:30:23.1402044+07:00 0HLMN9AGNC61N:00000003 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:23.1655251+07:00 0HLMN9AGNC61N:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:23.1918814+07:00 0HLMN9AGNC61N:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:30:23.2220101+07:00 0HLMN9AGNC61N:00000003 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:30:23.2519647+07:00 0HLMN9AGNC61N:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:23.2580533+07:00 0HLMN9AGNC61N:00000003 [INF] Executed ViewResult - view "Index" executed in 555.5557ms. (f66409e9)
+2019-05-13T09:30:23.2600914+07:00 0HLMN9AGNC61N:00000003 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" in 579.4476ms (afa2e885)
+2019-05-13T09:30:23.2622812+07:00 0HLMN9AGNC61N:00000003 [INF] Request finished in 589.1347ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:30:23.2892958+07:00 0HLMN9AGNC61K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/helper/index.js   (ca22a1cb)
+2019-05-13T09:30:23.2980877+07:00 0HLMN9AGNC61G:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/helper/imagesmanagement.js   (ca22a1cb)
+2019-05-13T09:30:23.3274791+07:00 0HLMN9AGNC61G:0000000E [INF] Sending file. Request path: '"/admin-side/controller/helper/imagesmanagement.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\controller\helper\imagesmanagement.js"' (27b0a520)
+2019-05-13T09:30:23.3293046+07:00 0HLMN9AGNC61G:0000000E [INF] Request finished in 31.0116ms 200 application/javascript (791a596a)
+2019-05-13T09:30:23.3681138+07:00 0HLMN9AGNC61K:00000003 [INF] Sending file. Request path: '"/admin-side/controller/helper/index.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\controller\helper\index.js"' (27b0a520)
+2019-05-13T09:30:23.3703554+07:00 0HLMN9AGNC61K:00000003 [INF] Request finished in 83.3938ms 200 application/javascript (791a596a)
+2019-05-13T09:30:23.4001195+07:00 0HLMN9AGNC61O:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:23.4044744+07:00 0HLMN9AGNC61O:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:23.4282547+07:00 0HLMN9AGNC61O:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:23.4366324+07:00 0HLMN9AGNC61O:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:23.4806847+07:00 0HLMN9AGNC61O:00000004 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppHelpers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:23.5044146+07:00 0HLMN9AGNC61O:00000004 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppHelpers] AS [a]" (0723d8ff)
+2019-05-13T09:30:23.5076912+07:00 0HLMN9AGNC61O:00000004 [WRN] Query: '"(from AppHelper <generated>_2 in DbSet<AppHelper> select [<generated>_2]).Skip(__p_0).Take(__p_1)"' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2019-05-13T09:30:23.5338593+07:00 0HLMN9AGNC61O:00000004 [INF] Executed DbCommand ("21"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[IDcard], [a].[Password], [a].[Paymoney], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppHelpers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:23.5375075+07:00 0HLMN9AGNC61O:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 107.3889ms. (50a9e262)
+2019-05-13T09:30:23.5396043+07:00 0HLMN9AGNC61O:00000004 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdHelperViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:23.5489108+07:00 0HLMN9AGNC61O:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" in 142.6056ms (afa2e885)
+2019-05-13T09:30:23.5516265+07:00 0HLMN9AGNC61O:00000004 [INF] Request finished in 150.9289ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:23.5649692+07:00 0HLMN9AGNC61H:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:23.5669587+07:00 0HLMN9AGNC61H:00000010 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:23.5837008+07:00 0HLMN9AGNC61H:00000010 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:23.5868607+07:00 0HLMN9AGNC61H:00000010 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:23.6082695+07:00 0HLMN9AGNC61H:00000010 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppHelpers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:23.6307764+07:00 0HLMN9AGNC61H:00000010 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppHelpers] AS [a]" (0723d8ff)
+2019-05-13T09:30:23.6576884+07:00 0HLMN9AGNC61H:00000010 [INF] Executed DbCommand ("25"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[IDcard], [a].[Password], [a].[Paymoney], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppHelpers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:23.6597791+07:00 0HLMN9AGNC61H:00000010 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 74.3281ms. (50a9e262)
+2019-05-13T09:30:23.6616440+07:00 0HLMN9AGNC61H:00000010 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdHelperViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:23.6636012+07:00 0HLMN9AGNC61H:00000010 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" in 94.8602ms (afa2e885)
+2019-05-13T09:30:23.6662126+07:00 0HLMN9AGNC61H:00000010 [INF] Request finished in 100.3741ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:45.7206261+07:00 0HLMN9AGNC61I:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/customer/index   (ca22a1cb)
+2019-05-13T09:30:45.7261264+07:00 0HLMN9AGNC61I:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Customer\"}". Executing action "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:30:45.7438490+07:00 0HLMN9AGNC61I:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:30:45.7472912+07:00 0HLMN9AGNC61I:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.439ms. (50a9e262)
+2019-05-13T09:30:45.9146475+07:00 0HLMN9AGNC61I:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:30:46.2168176+07:00 0HLMN9AGNC61I:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:46.2429321+07:00 0HLMN9AGNC61I:00000004 [INF] Executed DbCommand ("24"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:46.2677962+07:00 0HLMN9AGNC61I:00000004 [INF] Executed DbCommand ("22"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:30:46.2936659+07:00 0HLMN9AGNC61I:00000004 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:30:46.3198534+07:00 0HLMN9AGNC61I:00000004 [INF] Executed DbCommand ("22"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:46.3273978+07:00 0HLMN9AGNC61I:00000004 [INF] Executed ViewResult - view "Index" executed in 577.9283ms. (f66409e9)
+2019-05-13T09:30:46.3294479+07:00 0HLMN9AGNC61I:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)" in 601.5576ms (afa2e885)
+2019-05-13T09:30:46.3313070+07:00 0HLMN9AGNC61I:00000004 [INF] Request finished in 612.6414ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:30:46.3811420+07:00 0HLMN9AGNC61J:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/customer/avatarmanagement.js   (ca22a1cb)
+2019-05-13T09:30:46.3832498+07:00 0HLMN9AGNC61M:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin-side/controller/customer/index.js   (ca22a1cb)
+2019-05-13T09:30:46.4544787+07:00 0HLMN9AGNC61J:00000004 [INF] Sending file. Request path: '"/admin-side/controller/customer/avatarmanagement.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\controller\customer\avatarmanagement.js"' (27b0a520)
+2019-05-13T09:30:46.4594692+07:00 0HLMN9AGNC61J:00000004 [INF] Request finished in 77.5409ms 200 application/javascript (791a596a)
+2019-05-13T09:30:46.4880040+07:00 0HLMN9AGNC61M:00000004 [INF] Sending file. Request path: '"/admin-side/controller/customer/index.js"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\admin-side\controller\customer\index.js"' (27b0a520)
+2019-05-13T09:30:46.4903849+07:00 0HLMN9AGNC61M:00000004 [INF] Request finished in 110.5608ms 200 application/javascript (791a596a)
+2019-05-13T09:30:46.5155699+07:00 0HLMN9AGNC61Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Customer/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:46.5186825+07:00 0HLMN9AGNC61Q:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Customer\"}". Executing action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:46.5393458+07:00 0HLMN9AGNC61Q:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:46.5450165+07:00 0HLMN9AGNC61Q:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:46.5912255+07:00 0HLMN9AGNC61Q:00000004 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:46.6227594+07:00 0HLMN9AGNC61Q:00000004 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppCustomers] AS [a]" (0723d8ff)
+2019-05-13T09:30:46.6263912+07:00 0HLMN9AGNC61Q:00000004 [WRN] Query: '"(from AppCustomer <generated>_2 in DbSet<AppCustomer> select [<generated>_2]).Skip(__p_0).Take(__p_1..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2019-05-13T09:30:46.6585632+07:00 0HLMN9AGNC61Q:00000004 [INF] Executed DbCommand ("26"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[Avatar], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[Password], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppCustomers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:46.6617370+07:00 0HLMN9AGNC61Q:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 120.5207ms. (50a9e262)
+2019-05-13T09:30:46.6637577+07:00 0HLMN9AGNC61Q:00000004 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdCustomerViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:46.6739093+07:00 0HLMN9AGNC61Q:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" in 153.4072ms (afa2e885)
+2019-05-13T09:30:46.6760070+07:00 0HLMN9AGNC61Q:00000004 [INF] Request finished in 160.0544ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:46.7101833+07:00 0HLMN9AGNC61P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Customer/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:46.7121784+07:00 0HLMN9AGNC61P:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Customer\"}". Executing action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:46.7317565+07:00 0HLMN9AGNC61P:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:46.7336988+07:00 0HLMN9AGNC61P:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:46.7540766+07:00 0HLMN9AGNC61P:00000004 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:46.7761761+07:00 0HLMN9AGNC61P:00000004 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppCustomers] AS [a]" (0723d8ff)
+2019-05-13T09:30:46.7979208+07:00 0HLMN9AGNC61P:00000004 [INF] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[Avatar], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[Password], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppCustomers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:46.7998616+07:00 0HLMN9AGNC61P:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 66.4089ms. (50a9e262)
+2019-05-13T09:30:46.8013210+07:00 0HLMN9AGNC61P:00000004 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdCustomerViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:46.8040571+07:00 0HLMN9AGNC61P:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" in 89.2275ms (afa2e885)
+2019-05-13T09:30:46.8092782+07:00 0HLMN9AGNC61P:00000004 [INF] Request finished in 96.0254ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:48.4276370+07:00 0HLMN9AGNC61L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/helper/index   (ca22a1cb)
+2019-05-13T09:30:48.4304420+07:00 0HLMN9AGNC61L:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:30:48.4501248+07:00 0HLMN9AGNC61L:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:30:48.4517410+07:00 0HLMN9AGNC61L:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0164ms. (50a9e262)
+2019-05-13T09:30:48.4554688+07:00 0HLMN9AGNC61L:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:30:48.4582344+07:00 0HLMN9AGNC61L:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:48.4825701+07:00 0HLMN9AGNC61L:00000004 [INF] Executed DbCommand ("22"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:48.5101345+07:00 0HLMN9AGNC61L:00000004 [INF] Executed DbCommand ("25"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:30:48.5403052+07:00 0HLMN9AGNC61L:00000004 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:30:48.5692777+07:00 0HLMN9AGNC61L:00000004 [INF] Executed DbCommand ("26"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:48.5722367+07:00 0HLMN9AGNC61L:00000004 [INF] Executed ViewResult - view "Index" executed in 118.4877ms. (f66409e9)
+2019-05-13T09:30:48.5747795+07:00 0HLMN9AGNC61L:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" in 141.9733ms (afa2e885)
+2019-05-13T09:30:48.5774226+07:00 0HLMN9AGNC61L:00000004 [INF] Request finished in 149.433ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:30:48.6511302+07:00 0HLMN9AGNC61N:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:48.6543035+07:00 0HLMN9AGNC61N:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:48.6759956+07:00 0HLMN9AGNC61N:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:48.6788401+07:00 0HLMN9AGNC61N:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:48.6998369+07:00 0HLMN9AGNC61N:00000004 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppHelpers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:48.7265895+07:00 0HLMN9AGNC61N:00000004 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppHelpers] AS [a]" (0723d8ff)
+2019-05-13T09:30:48.7491358+07:00 0HLMN9AGNC61N:00000004 [INF] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[IDcard], [a].[Password], [a].[Paymoney], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppHelpers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:48.7512628+07:00 0HLMN9AGNC61N:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 73.5506ms. (50a9e262)
+2019-05-13T09:30:48.7528294+07:00 0HLMN9AGNC61N:00000004 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdHelperViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:48.7549279+07:00 0HLMN9AGNC61N:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" in 98.4544ms (afa2e885)
+2019-05-13T09:30:48.7570345+07:00 0HLMN9AGNC61N:00000004 [INF] Request finished in 107.565ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:48.7815726+07:00 0HLMN9AGNC61G:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:48.7832836+07:00 0HLMN9AGNC61G:0000000F [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:48.8054396+07:00 0HLMN9AGNC61G:0000000F [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:48.8086648+07:00 0HLMN9AGNC61G:0000000F [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:48.8312810+07:00 0HLMN9AGNC61G:0000000F [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppHelpers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:48.8551776+07:00 0HLMN9AGNC61G:0000000F [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppHelpers] AS [a]" (0723d8ff)
+2019-05-13T09:30:48.8758712+07:00 0HLMN9AGNC61G:0000000F [INF] Executed DbCommand ("19"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[IDcard], [a].[Password], [a].[Paymoney], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppHelpers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:48.8779816+07:00 0HLMN9AGNC61G:0000000F [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 70.6085ms. (50a9e262)
+2019-05-13T09:30:48.8798309+07:00 0HLMN9AGNC61G:0000000F [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdHelperViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:48.8818639+07:00 0HLMN9AGNC61G:0000000F [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" in 96.7912ms (afa2e885)
+2019-05-13T09:30:48.8837999+07:00 0HLMN9AGNC61G:0000000F [INF] Request finished in 102.1391ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:51.8579980+07:00 0HLMN9AGNC61K:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/customer/index   (ca22a1cb)
+2019-05-13T09:30:51.8616049+07:00 0HLMN9AGNC61K:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Customer\"}". Executing action "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:30:51.8819733+07:00 0HLMN9AGNC61K:00000004 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:30:51.8841807+07:00 0HLMN9AGNC61K:00000004 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0346ms. (50a9e262)
+2019-05-13T09:30:51.8881479+07:00 0HLMN9AGNC61K:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:30:51.8906584+07:00 0HLMN9AGNC61K:00000004 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:51.9158266+07:00 0HLMN9AGNC61K:00000004 [INF] Executed DbCommand ("23"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:51.9407614+07:00 0HLMN9AGNC61K:00000004 [INF] Executed DbCommand ("22"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:30:51.9720946+07:00 0HLMN9AGNC61K:00000004 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:30:52.0003516+07:00 0HLMN9AGNC61K:00000004 [INF] Executed DbCommand ("26"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:30:52.0041599+07:00 0HLMN9AGNC61K:00000004 [INF] Executed ViewResult - view "Index" executed in 116.6928ms. (f66409e9)
+2019-05-13T09:30:52.0065464+07:00 0HLMN9AGNC61K:00000004 [INF] Executed action "HomeCare.Areas.Admin.Controllers.CustomerController.Index (HomeCare)" in 142.5681ms (afa2e885)
+2019-05-13T09:30:52.0093886+07:00 0HLMN9AGNC61K:00000004 [INF] Request finished in 151.1568ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:30:52.0899125+07:00 0HLMN9AGNC61O:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Customer/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:52.0917684+07:00 0HLMN9AGNC61O:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Customer\"}". Executing action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:52.1146792+07:00 0HLMN9AGNC61O:00000005 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:52.1166535+07:00 0HLMN9AGNC61O:00000005 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:52.1417321+07:00 0HLMN9AGNC61O:00000005 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:52.1717755+07:00 0HLMN9AGNC61O:00000005 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppCustomers] AS [a]" (0723d8ff)
+2019-05-13T09:30:52.1987802+07:00 0HLMN9AGNC61O:00000005 [INF] Executed DbCommand ("25"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[Avatar], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[Password], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppCustomers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:52.2008606+07:00 0HLMN9AGNC61O:00000005 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 84.3847ms. (50a9e262)
+2019-05-13T09:30:52.2025735+07:00 0HLMN9AGNC61O:00000005 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdCustomerViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:52.2071093+07:00 0HLMN9AGNC61O:00000005 [INF] Executed action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" in 111.378ms (afa2e885)
+2019-05-13T09:30:52.2089410+07:00 0HLMN9AGNC61O:00000005 [INF] Request finished in 119.9763ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:30:52.2204264+07:00 0HLMN9AGNC61H:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Customer/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:30:52.2241256+07:00 0HLMN9AGNC61H:00000011 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Customer\"}". Executing action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:30:52.2437380+07:00 0HLMN9AGNC61H:00000011 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:30:52.2455843+07:00 0HLMN9AGNC61H:00000011 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:30:52.2677568+07:00 0HLMN9AGNC61H:00000011 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:30:52.2904813+07:00 0HLMN9AGNC61H:00000011 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppCustomers] AS [a]" (0723d8ff)
+2019-05-13T09:30:52.3143597+07:00 0HLMN9AGNC61H:00000011 [INF] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[Avatar], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[Password], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppCustomers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:30:52.3162774+07:00 0HLMN9AGNC61H:00000011 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 70.9144ms. (50a9e262)
+2019-05-13T09:30:52.3181165+07:00 0HLMN9AGNC61H:00000011 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdCustomerViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:30:52.3217760+07:00 0HLMN9AGNC61H:00000011 [INF] Executed action "HomeCare.Areas.Admin.Controllers.CustomerController.GetAllPaging (HomeCare)" in 94.1006ms (afa2e885)
+2019-05-13T09:30:52.3253429+07:00 0HLMN9AGNC61H:00000011 [INF] Request finished in 104.151ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:31:05.7738415+07:00 0HLMN9AGNC61I:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44362/admin/helper/index   (ca22a1cb)
+2019-05-13T09:31:05.7761937+07:00 0HLMN9AGNC61I:00000005 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" (a44c0341)
+2019-05-13T09:31:05.7953772+07:00 0HLMN9AGNC61I:00000005 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" - Validation state: Valid (dad538d7)
+2019-05-13T09:31:05.7973909+07:00 0HLMN9AGNC61I:00000005 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0331ms. (50a9e262)
+2019-05-13T09:31:05.7996281+07:00 0HLMN9AGNC61I:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-05-13T09:31:05.8036374+07:00 0HLMN9AGNC61I:00000005 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:31:05.8331554+07:00 0HLMN9AGNC61I:00000005 [INF] Executed DbCommand ("26"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:31:05.8637506+07:00 0HLMN9AGNC61I:00000005 [INF] Executed DbCommand ("28"ms) [Parameters=["@__session_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Name]
+FROM [AppAdmins] AS [a]
+INNER JOIN [AppAdminModRoles] AS [b] ON [a].[Id] = [b].[AdminModId]
+INNER JOIN [AppRoles] AS [c] ON [b].[RoleId] = [c].[Id]
+WHERE [a].[Id] = @__session_Id_0" (0723d8ff)
+2019-05-13T09:31:05.8934247+07:00 0HLMN9AGNC61I:00000005 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]" (0723d8ff)
+2019-05-13T09:31:05.9209108+07:00 0HLMN9AGNC61I:00000005 [INF] Executed DbCommand ("24"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Address], [x].[Avatar], [x].[BirthDay], [x].[DateCreated], [x].[DateModified], [x].[Email], [x].[FullName], [x].[Password], [x].[PhoneNumber], [x].[Status], [x].[UserName]
+FROM [AppAdmins] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:31:05.9243198+07:00 0HLMN9AGNC61I:00000005 [INF] Executed ViewResult - view "Index" executed in 124.7655ms. (f66409e9)
+2019-05-13T09:31:05.9267065+07:00 0HLMN9AGNC61I:00000005 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.Index (HomeCare)" in 148.2453ms (afa2e885)
+2019-05-13T09:31:05.9289551+07:00 0HLMN9AGNC61I:00000005 [INF] Request finished in 155.1824ms 200 text/html; charset=utf-8 (791a596a)
+2019-05-13T09:31:06.0849515+07:00 0HLMN9AGNC61J:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:31:06.0876169+07:00 0HLMN9AGNC61J:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:31:06.1129740+07:00 0HLMN9AGNC61J:00000005 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:31:06.1150223+07:00 0HLMN9AGNC61J:00000005 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:31:06.1447745+07:00 0HLMN9AGNC61J:00000005 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppHelpers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:31:06.1775461+07:00 0HLMN9AGNC61J:00000005 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppHelpers] AS [a]" (0723d8ff)
+2019-05-13T09:31:06.2003202+07:00 0HLMN9AGNC61J:00000005 [INF] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[IDcard], [a].[Password], [a].[Paymoney], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppHelpers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:31:06.2023178+07:00 0HLMN9AGNC61J:00000005 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 87.6025ms. (50a9e262)
+2019-05-13T09:31:06.2058169+07:00 0HLMN9AGNC61J:00000005 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdHelperViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:31:06.2085734+07:00 0HLMN9AGNC61J:00000005 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" in 118.3531ms (afa2e885)
+2019-05-13T09:31:06.2106868+07:00 0HLMN9AGNC61J:00000005 [INF] Request finished in 125.6892ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:31:06.2235899+07:00 0HLMN9AGNC61M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Helper/GetAllPaging?keyword=&birthday=&page=1&pageSize=10   (ca22a1cb)
+2019-05-13T09:31:06.2256003+07:00 0HLMN9AGNC61M:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Helper\"}". Executing action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" (a44c0341)
+2019-05-13T09:31:06.2454637+07:00 0HLMN9AGNC61M:00000005 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:31:06.2473060+07:00 0HLMN9AGNC61M:00000005 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:31:06.2778932+07:00 0HLMN9AGNC61M:00000005 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppHelpers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-05-13T09:31:06.3007125+07:00 0HLMN9AGNC61M:00000005 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppHelpers] AS [a]" (0723d8ff)
+2019-05-13T09:31:06.3247513+07:00 0HLMN9AGNC61M:00000005 [INF] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[BirthDay], [a].[CancelBillNumber], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[FullName], [a].[IDcard], [a].[Password], [a].[Paymoney], [a].[PhoneNumber], [a].[RoleId], [a].[Status], [a].[UserName]
+FROM [AppHelpers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-05-13T09:31:06.3270196+07:00 0HLMN9AGNC61M:00000005 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 79.6009ms. (50a9e262)
+2019-05-13T09:31:06.3291493+07:00 0HLMN9AGNC61M:00000005 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.PagedResult`1[[HomeCare.Application.ViewModels.Admin.AdHelperViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:31:06.3312914+07:00 0HLMN9AGNC61M:00000005 [INF] Executed action "HomeCare.Areas.Admin.Controllers.HelperController.GetAllPaging (HomeCare)" in 103.7013ms (afa2e885)
+2019-05-13T09:31:06.3335261+07:00 0HLMN9AGNC61M:00000005 [INF] Request finished in 109.8231ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:31:57.6665376+07:00 0HLMN9AGNC61I:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Upload/GetById?helperId=akainu%40gmail.com   (ca22a1cb)
+2019-05-13T09:31:57.6711389+07:00 0HLMN9AGNC61I:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"Upload\"}". Executing action "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:31:57.6964884+07:00 0HLMN9AGNC61I:00000006 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" with arguments (["akainu@gmail.com"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:31:57.7006777+07:00 0HLMN9AGNC61I:00000006 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:31:57.7511476+07:00 0HLMN9AGNC61I:00000006 [INF] Executed DbCommand ("42"ms) [Parameters=["@__helperId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[HelperId], [x].[Path], [x].[Caption]
+FROM [HelperImages] AS [x]
+WHERE [x].[HelperId] = @__helperId_0" (0723d8ff)
+2019-05-13T09:31:57.7555302+07:00 0HLMN9AGNC61I:00000006 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 56.9723ms. (50a9e262)
+2019-05-13T09:31:57.7590147+07:00 0HLMN9AGNC61I:00000006 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[HomeCare.Application.ViewModels.Admin.AdHelperImageViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:31:57.7642980+07:00 0HLMN9AGNC61I:00000006 [INF] Executed action "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" in 90.703ms (afa2e885)
+2019-05-13T09:31:57.7670682+07:00 0HLMN9AGNC61I:00000006 [INF] Request finished in 99.7074ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:31:57.8117725+07:00 0HLMN9AGNC61J:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/images/Akainu/akainu1.png   (ca22a1cb)
+2019-05-13T09:31:57.8324074+07:00 0HLMN9AGNC61M:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/images/Akainu/akainu2.png   (ca22a1cb)
+2019-05-13T09:31:57.8334537+07:00 0HLMN9AGNC61I:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/images/Akainu/Zoro.jpg   (ca22a1cb)
+2019-05-13T09:31:57.8441098+07:00 0HLMN9AGNC61R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/images/Akainu/Luffy.jpg   (ca22a1cb)
+2019-05-13T09:31:57.8468642+07:00 0HLMN9AGNC61S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44362/helper-side/images/Akainu/helper1.png   (ca22a1cb)
+2019-05-13T09:31:57.9070339+07:00 0HLMN9AGNC61J:00000006 [INF] Sending file. Request path: '"/helper-side/images/Akainu/akainu1.png"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\images\Akainu\akainu1.png"' (27b0a520)
+2019-05-13T09:31:57.9098704+07:00 0HLMN9AGNC61J:00000006 [INF] Request finished in 110.0528ms 200 image/png (791a596a)
+2019-05-13T09:31:57.9244419+07:00 0HLMN9AGNC61I:00000007 [INF] Sending file. Request path: '"/helper-side/images/Akainu/Zoro.jpg"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\images\Akainu\Zoro.jpg"' (27b0a520)
+2019-05-13T09:31:57.9279176+07:00 0HLMN9AGNC61I:00000007 [INF] Request finished in 112.8196ms 200 image/jpeg (791a596a)
+2019-05-13T09:31:57.9473590+07:00 0HLMN9AGNC61R:00000001 [INF] Sending file. Request path: '"/helper-side/images/Akainu/Luffy.jpg"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\images\Akainu\Luffy.jpg"' (27b0a520)
+2019-05-13T09:31:57.9506158+07:00 0HLMN9AGNC61R:00000001 [INF] Request finished in 113.5803ms 200 image/jpeg (791a596a)
+2019-05-13T09:31:58.0308874+07:00 0HLMN9AGNC61M:00000006 [INF] Sending file. Request path: '"/helper-side/images/Akainu/akainu2.png"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\images\Akainu\akainu2.png"' (27b0a520)
+2019-05-13T09:31:58.0331188+07:00 0HLMN9AGNC61M:00000006 [INF] Request finished in 221.0684ms 200 image/png (791a596a)
+2019-05-13T09:31:58.1300319+07:00 0HLMN9AGNC61S:00000001 [INF] Sending file. Request path: '"/helper-side/images/Akainu/helper1.png"'. Physical path: '"D:\C#\HomeCare\HomeCare\wwwroot\helper-side\images\Akainu\helper1.png"' (27b0a520)
+2019-05-13T09:31:58.1338631+07:00 0HLMN9AGNC61S:00000001 [INF] Request finished in 285.3904ms 200 image/png (791a596a)
+2019-05-13T09:32:33.1148838+07:00 0HLMN9AGNC61J:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Upload/GetById?helperId=akainu%40gmail.com   (ca22a1cb)
+2019-05-13T09:32:33.1173001+07:00 0HLMN9AGNC61J:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"Upload\"}". Executing action "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:32:33.1369585+07:00 0HLMN9AGNC61J:00000007 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" with arguments (["akainu@gmail.com"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:32:33.1389393+07:00 0HLMN9AGNC61J:00000007 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:32:33.1633774+07:00 0HLMN9AGNC61J:00000007 [INF] Executed DbCommand ("21"ms) [Parameters=["@__helperId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[HelperId], [x].[Path], [x].[Caption]
+FROM [HelperImages] AS [x]
+WHERE [x].[HelperId] = @__helperId_0" (0723d8ff)
+2019-05-13T09:32:33.1656027+07:00 0HLMN9AGNC61J:00000007 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 26.6108ms. (50a9e262)
+2019-05-13T09:32:33.1676985+07:00 0HLMN9AGNC61J:00000007 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[HomeCare.Application.ViewModels.Admin.AdHelperImageViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:32:33.1699040+07:00 0HLMN9AGNC61J:00000007 [INF] Executed action "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" in 50.6066ms (afa2e885)
+2019-05-13T09:32:33.1719735+07:00 0HLMN9AGNC61J:00000007 [INF] Request finished in 56.9752ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:33:18.0281954+07:00 0HLMN9AGNC61J:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44362/Admin/Upload/Delete application/x-www-form-urlencoded; charset=UTF-8 67 (ca22a1cb)
+2019-05-13T09:33:18.0320022+07:00 0HLMN9AGNC61J:00000008 [INF] Route matched with "{area = \"Admin\", action = \"Delete\", controller = \"Upload\"}". Executing action "HomeCare.Areas.Admin.Controllers.UploadController.Delete (HomeCare)" (a44c0341)
+2019-05-13T09:33:18.0555801+07:00 0HLMN9AGNC61J:00000008 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.UploadController.Delete (HomeCare)" with arguments (["34", "/helper-side/images/Akainu/helper1.png"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:33:18.0583450+07:00 0HLMN9AGNC61J:00000008 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:33:18.0887215+07:00 0HLMN9AGNC61J:00000008 [INF] Executed DbCommand ("22"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Caption], [x].[HelperId], [x].[Path]
+FROM [HelperImages] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2019-05-13T09:33:18.2279897+07:00 0HLMN9AGNC61J:00000008 [INF] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [HelperImages]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2019-05-13T09:33:18.2513367+07:00 0HLMN9AGNC61J:00000008 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.UploadController.Delete (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 184.3135ms. (50a9e262)
+2019-05-13T09:33:18.2530605+07:00 0HLMN9AGNC61J:00000008 [INF] Executing ObjectResult, writing value of type '"HomeCare.Utilities.Dtos.ResultEmpty"'. (8a1b66c8)
+2019-05-13T09:33:18.2560150+07:00 0HLMN9AGNC61J:00000008 [INF] Executed action "HomeCare.Areas.Admin.Controllers.UploadController.Delete (HomeCare)" in 221.9298ms (afa2e885)
+2019-05-13T09:33:18.2584982+07:00 0HLMN9AGNC61J:00000008 [INF] Request finished in 229.5963ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-13T09:33:38.4526874+07:00 0HLMN9AGNC61J:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44362/Admin/Upload/GetById?helperId=akainu%40gmail.com   (ca22a1cb)
+2019-05-13T09:33:38.4552576+07:00 0HLMN9AGNC61J:00000009 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"Upload\"}". Executing action "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" (a44c0341)
+2019-05-13T09:33:38.4743616+07:00 0HLMN9AGNC61J:00000009 [INF] Executing action method "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" with arguments (["akainu@gmail.com"]) - Validation state: Valid (4e3479ed)
+2019-05-13T09:33:38.4767225+07:00 0HLMN9AGNC61J:00000009 [INF] Entity Framework Core "2.1.8-servicing-32085" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=HomeCare.Data.EF " (9958f5bb)
+2019-05-13T09:33:38.5021591+07:00 0HLMN9AGNC61J:00000009 [INF] Executed DbCommand ("21"ms) [Parameters=["@__helperId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[HelperId], [x].[Path], [x].[Caption]
+FROM [HelperImages] AS [x]
+WHERE [x].[HelperId] = @__helperId_0" (0723d8ff)
+2019-05-13T09:33:38.5046469+07:00 0HLMN9AGNC61J:00000009 [INF] Executed action method "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 27.9254ms. (50a9e262)
+2019-05-13T09:33:38.5065056+07:00 0HLMN9AGNC61J:00000009 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[HomeCare.Application.ViewModels.Admin.AdHelperImageViewModel, HomeCare.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-05-13T09:33:38.5081824+07:00 0HLMN9AGNC61J:00000009 [INF] Executed action "HomeCare.Areas.Admin.Controllers.UploadController.GetById (HomeCare)" in 51.3851ms (afa2e885)
+2019-05-13T09:33:38.5129443+07:00 0HLMN9AGNC61J:00000009 [INF] Request finished in 57.4329ms 200 application/json; charset=utf-8 (791a596a)

@@ -1,0 +1,105 @@
+﻿<div id="modalBillDetail" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="btnBIDClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Bill Detail</h4>
+            </div>
+            <div class="modal-body">
+                <div id="billdetail-form">
+                    <form class="form-horizontal" role="form" id="frmBillDetail">
+                        <div class="form-group">
+                            <input type="hidden" id="BiDeId" value="0" />
+                            <label for="txtBIDWorkplace" class="col-sm-3 control-label no-padding-right">Workplace</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDWorkplace" class="form-control" id="txtBIDWorkplace">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDApartmentnumber" class="col-sm-3 control-label no-padding-right">Apartmentnumber</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="txtBIDApartmentnumber" class="form-control" name="txtBIDApartmentnumber">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDWorkday" class="col-sm-3 control-label no-padding-right">Workday</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDWorkday" class="form-control" id="txtBIDWorkday">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDStarttime" class="col-sm-3 control-label no-padding-right">Starttime</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDStarttime" class="form-control" id="txtBIDStarttime">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtBIDBillOptions" class="col-sm-3 control-label no-padding-right">Option</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDBillOptions" class="form-control" id="txtBIDBillOptions">
+                            </div>
+                        </div>                      
+
+                        <div class="form-group">
+                            <label for="txtBIDDescription" class="col-sm-3 control-label no-padding-right">Description</label>
+                            <div class="col-sm-9">
+                                <textarea rows="3" name="txtBIDDescription" class="form-control" id="txtBIDDescription"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDCustomerName" class="col-sm-3 control-label no-padding-right">CustomerName</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDCustomerName" class="form-control" id="txtBIDCustomerName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDCustomerAddress" class="col-sm-3 control-label no-padding-right">CustomerAddress</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDCustomerAddress" class="form-control" id="txtBIDCustomerAddress">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDCustomerMobile" class="col-sm-3 control-label no-padding-right">CustomerMobile</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDCustomerMobile" class="form-control" id="txtBIDCustomerMobile">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBIDCustomerEmail" class="col-sm-3 control-label no-padding-right">CustomerEmail</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDCustomerEmail" class="form-control" id="txtBIDCustomerEmail">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtBIDPaymentMethod" class="col-sm-3 control-label no-padding-right">Payment Method</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtBIDPaymentMethod" class="form-control" id="txtBIDPaymentMethod">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                @*<div class="checkbox" style="border-style:none">
+                                        <label>
+                                            <input type="checkbox" id="ckStatusM">
+                                            <span class="text">Active.</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="ckShowHomeM">
+                                            <span class="text">Show on home.</span>
+                                        </label>
+                                    </div>*@
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnBIDCancel" class="btn btn-default" data-dismiss="modal">Close</button>                
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

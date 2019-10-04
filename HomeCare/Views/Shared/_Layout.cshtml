@@ -1,0 +1,345 @@
+﻿@inject IHttpContextAccessor accessor
+
+@{
+    var httpContext = accessor.HttpContext;
+    var customersession = httpContext.Session.Get<CustomerLogin>(CommonConstants.CUSTOMER_SESSION);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page needs -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ShopMart premium HTML5 &amp; CSS3 template</title>
+    <meta name="description" content="best template, template free, responsive theme, fashion store, responsive theme, responsive html theme, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template">
+    <meta name="keywords" content="bootstrap, ecommerce, fashion, layout, responsive, responsive template, responsive template download, responsive theme, retail, shop, shopping, store, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template" />
+
+    <!-- Mobile specific metas  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/customer-side/template/favicon.ico">
+
+    <!-- CSS Style -->
+    <link href="~/customer-side/template/style.css" rel="stylesheet" />
+    <link href="~/lib/notifyjs/dist/styles/metro/notify-metro.css" rel="stylesheet" />
+    
+    
+    @RenderSection("Styles", required: false)
+
+</head>
+
+<body class="@ViewData["BodyClass"]">
+    <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <div id="page">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-xs-12">
+                                <!-- Default Welcome Message -->
+                                <div class="welcome-msg hidden-xs hidden-sm">Welcome to HomeCare</div>
+                                <!-- Language &amp; Currency wrapper -->
+                                <div class="language-currency-wrapper">
+                                    <div class="inner-cl">
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- top links -->
+                            <div class="headerlinkmenu col-md-8 col-sm-8 col-xs-12">
+                                <span class="phone  hidden-xs hidden-sm">Call Us: +123.456.789</span>
+                                <ul class="links">
+                                    <li>
+                                        <div class="dropdown">
+                                            @if (customersession != null)
+                                            {
+                                                <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span>@customersession.UserName</span> <i class="fa fa-angle-down"></i></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Account</a></li>
+                                                    <li><a href="/Login/Logout">Log out</a></li>
+                                                </ul>
+                                            }
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header inner -->
+                <div class="header-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12 jtv-logo-block">
+                                <!-- Header Logo -->
+                                <div class="logo">
+                                    <a title="e-commerce" href="#">
+                                        @*<img alt="ShopMart" title="ShopMart" src="~/customer-side/template/images/logo.png">*@
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-6 jtv-top-search">
+
+                                <!-- Search -->
+
+                                <div class="top-search">
+                                    <div id="search">
+                                        <form>
+                                            <div class="input-group">
+                                                <select class="cate-dropdown hidden-xs hidden-sm" name="category_id">
+                                                    <option>Bills</option>
+                                                    <option>Helpers</option>
+                                                </select>
+                                                <input type="text" class="form-control" placeholder="Enter your search..." name="search">
+                                                <button class="btn-search" type="button"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- End Search -->
+
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 top-cart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="mm-toggle-wrap">
+                        <div class="mm-toggle"><i class="fa fa-align-justify"></i> </div>
+                        <span class="mm-label">HOMECARE</span>
+                    </div>
+                    <div class="col-md-3 col-sm-3 mega-container hidden-xs">
+                        <div class="navleft-container">
+                            <div class="mega-menu-title">
+                                <h3><span>HOMECARE</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 jtv-megamenu">
+                        <div class="mtmegamenu">
+                            <ul class="hidden-xs">
+                                <li class="mt-root demo_custom_link_cms">
+                                    <div class="mt-root-item">
+                                        <a href="/Home/Index">
+                                            <div class="title title_font"><span class="title-text">Bill List</span></div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item">
+                                        <a href="#">
+                                            <div class="title title_font"><span class="title-text">Helper List</span></div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item">
+                                        <a href="#">
+                                            <div class="title title_font"><span class="title-text"></span> </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item">
+                                        <a href="#">
+                                            <div class="title title_font"><span class="title-text"></span></div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mt-root demo_custom_link_cms">
+                                    <div class="mt-root-item">
+                                        <a href="#">
+                                            <div class="title title_font"><span class="title-text"></span></div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item">
+                                        <div class="title title_font"><span class="title-text"></span></div>
+                                    </div>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        @RenderBody()
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-contact">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="footer-contact-item">
+                                <div class="footer-contact-icon"> <i class="fa fa-phone"></i> </div>
+                                <div class="footer-contact-text"> + (800) 0123 456 789 </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-bottom: 52px">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="footer-logo"><a href="index.html">@*<img src="~/customer-side/template/images/footer-logo.png" alt="fotter logo">*@</a> </div>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry. Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet.</p>
+                        <div class="social">
+                            <ul class="inline-mode">
+                                <li class="social-network fb"><a title="Connect us on Facebook" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-network googleplus"><a title="Connect us on Google+" target="_blank" href="https://plus.google.com"><i class="fa fa-google"></i></a></li>
+                                <li class="social-network tw"><a title="Connect us on Twitter" target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                <li class="social-network linkedin"><a title="Connect us on Pinterest" target="_blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+                                <li class="social-network rss"><a title="Connect us on Instagram" target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-xs-12 collapsed-block">
+                        <div class="footer-links">
+                            <h3 class="links-title">Information<a class="expander visible-xs" href="#TabBlock-1">+</a></h3>
+                            <div class="tabBlock" id="TabBlock-1">
+                                <ul class="list-links list-unstyled">
+                                    <li><a href="#s">Delivery Information</a></li>
+                                    <li><a href="#">Discount</a></li>
+                                    <li><a href="sitemap.html">Sitemap</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="#">Terms &amp; Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-12 collapsed-block">
+                        <div class="footer-links">
+                            <h3 class="links-title">Insider<a class="expander visible-xs" href="#TabBlock-3">+</a></h3>
+                            <div class="tabBlock" id="TabBlock-3">
+                                <ul class="list-links list-unstyled">
+                                    <li><a href="sitemap.html"> Sites Map </a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Trends</a></li>
+                                    <li><a href="about_us.html">About Us</a></li>
+                                    <li><a href="contact_us.html">Contact Us</a></li>
+                                    <li><a href="#">My Orders</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-12 collapsed-block">
+                        <div class="footer-links">
+                            <h3 class="links-title">Service<a class="expander visible-xs" href="#TabBlock-4">+</a></h3>
+                            <div class="tabBlock" id="TabBlock-4">
+                                <ul class="list-links list-unstyled">
+                                    <li><a href="account_page.html">Account</a></li>
+                                    <li><a href="wishlist.html">Return Policy</a></li>
+                                    <li><a href="shopping_cart.html">Special</a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 collapsed-block">
+                        <div class="footer-links">
+                            <h3 class="links-title">Working hours<a class="expander visible-xs" href="#TabBlock-5">+</a></h3>
+                            <div class="tabBlock" id="TabBlock-5">
+                                <div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+                                <div class="footer-description">
+                                    <b>Monday-Friday:</b> 8.30 a.m. - 5.30 p.m.<br>
+                                    <b>Saturday:</b> 9.00 a.m. - 2.00 p.m.<br>
+                                    <b>Sunday:</b> Closed
+                                </div>
+                                <div class="payment">
+                                    <ul>
+                                        <li><a href="#"><img title="Visa" alt="Visa" src="~/customer-side/template/images/visa.png"></a></li>
+                                        <li><a href="#"><img title="Paypal" alt="Paypal" src="~/customer-side/template/images/paypal.png"></a></li>
+                                        <li><a href="#"><img title="Discover" alt="Discover" src="~/customer-side/template/images/discover.png"></a></li>
+                                        <li><a href="#"><img title="Master Card" alt="Master Card" src="~/customer-side/template/images/master-card.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-coppyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12 coppyright"> Copyright © 2017 <a href="#"> ShopMart </a>. All Rights Reserved. </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <ul class="footer-company-links">
+                                <li> <a href="about_us.html">About ShopMart</a> </li>
+                                <li> <a href="#">Careers</a> </li>
+                                <li> <a href="#">Privacy Policy</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+    <!-- End Footer -->
+    <!-- JS -->
+    <!-- jquery js -->
+    <script type="text/javascript" src="~/customer-side/template/js/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="~/customer-side/template/js/bootstrap.min.js"></script>
+
+    <!-- owl.carousel.min js -->
+    <script type="text/javascript" src="~/customer-side/template/js/owl.carousel.min.js"></script>
+
+    <!-- bxslider js -->
+    <script type="text/javascript" src="~/customer-side/template/js/jquery.bxslider.js"></script>
+
+    <!-- jquery.mobile-menu js -->
+    <script type="text/javascript" src="~/customer-side/template/js/mobile-menu.js"></script>
+
+    <!--jquery-ui.min js -->
+    <script type="text/javascript" src="~/customer-side/template/js/jquery-ui.js"></script>
+
+    <!-- main js -->
+    <script type="text/javascript" src="~/customer-side/template/js/main.js"></script>
+
+    <script src="~/lib/mustache.js-master/mustache.min.js"></script>
+    <script src="~/lib/twbs-pagination-master/jquery.twbsPagination.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/notifyjs/dist/notify.js"></script>
+    <script src="~/lib/notifyjs/dist/styles/metro/notify-metro.js"></script>
+    <script src="~/lib/bootbox/bootbox.js"></script>
+    <script src="~/app/homecare.js"></script>
+
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

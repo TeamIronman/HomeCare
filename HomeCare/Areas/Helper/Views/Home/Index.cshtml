@@ -1,0 +1,101 @@
+﻿@using HomeCare.Data.Enums
+@using HomeCare.Application.ViewModels.Helper
+@model HomeCare.Utilities.Dtos.PagedResult<HelperBillViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@section Styles {
+
+}
+
+@section Scripts {
+    <script src="~/helper-side/controller/home/index.js" asp-append-version="true"></script>
+    <script>
+        registerEvents();
+        hpcheck();
+    </script>
+}
+
+
+<!-- Main Container -->
+
+<section class="blog_post">
+    <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+            <!-- Center colunm-->
+            <div class="center_column col-xs-12 col-sm-12" id="center_column">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h2>Bill List</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="btnReload" class="btn btn-primary btn-dm"><i class="fa fa-refresh" style="margin-right: 5px"></i> Reload BillStatus</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="blog-posts">
+                    @if (Model.Results != null)
+                    {
+                        @foreach (var item in Model.Results)
+                        {
+                            <li class="post-item wow fadeInUp">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="entry-thumb image-hover2">
+                                                <figure><img src="~/customer-side/template/images/blog-img1.jpg" alt="Blog"></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <h4 class="entry-title" style="margin-bottom: 10px">@item.Workplace, @item.Apartmentnumber</h4>
+                                            <div class="entry-meta-data" style="margin-bottom: 10px"> <span class="author"> <i class="pe-7s-user"></i>&nbsp; by: @item.CustomerName</span> <span class="cat"> <i class="pe-7s-folder"></i>&nbsp; Starting Time : @item.Starttime </span> <span class="comment-count"> <i class="pe-7s-comment"></i>&nbsp; @item.Workinghours </span> <span class="date"><i class="pe-7s-date"></i>&nbsp; @item.Workday</span> </div>
+                                            <div class="rating" style="margin-bottom: 10px">
+                                                <h4><span class="label label-primary">@item.BillStatus</span></h4>
+                                            </div>
+                                            <div class="entry-excerpt"><strong>@item.Description</strong></div>
+                                            <div class="entry-more">
+                                                <button class="btn btn-info btn-md btn-detail-bill" data-id="@item.Id"><i class="fa fa-info-circle"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        }
+                    }
+                </ul>
+                @(await Component.InvokeAsync("HelperPager", Model))
+            </div>
+            <!-- ./ Center colunm -->
+        </div>
+        <!-- ./row-->
+    </div>
+</section>
+<!-- Main Container End -->
+<!-- service section -->
+<div class="jtv-service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12 ">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+        </div>               
+    </div>
+</div>
+
+@await Html.PartialAsync("_BillDetail.cshtml")

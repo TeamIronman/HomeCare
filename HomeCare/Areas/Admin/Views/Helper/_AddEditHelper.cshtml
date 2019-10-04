@@ -1,0 +1,110 @@
+﻿<div id="modalHelperDetail" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="btnHEDIClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Helper Detail</h4>
+            </div>
+            <div class="modal-body">
+                <div id="helperdetail-form">
+                    <form class="form-horizontal" role="form" id="frmHelperDetail">
+                        <div class="form-group">
+                            <input type="hidden" id="HeId" value="" />
+                            <label for="txtUserName" class="col-sm-3 control-label no-padding-right">UserName</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtUserName" class="form-control" id="txtUserName" placeholder="UserName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFullName" class="col-sm-3 control-label no-padding-right">FullName</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="txtFullName" class="form-control" name="txtFullName" placeholder="FullName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail" class="col-sm-3 control-label no-padding-right">Email</label>
+                            <div class="col-sm-9">
+                                <input type="email" name="txtEmail" class="form-control" id="txtEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPhoneNumber" class="col-sm-3 control-label no-padding-right">PhoneNumber</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtPhoneNumber" class="form-control" id="txtPhoneNumber" placeholder="PhoneNumber">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtPassword" class="col-sm-3 control-label no-padding-right">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="txtPassword" class="form-control" id="txtPassword" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtIDcard" class="col-sm-3 control-label no-padding-right">IDcard</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtIDcard" class="form-control" id="txtIDcard" placeholder="IDcard">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDateOfBirth" class="col-sm-3 control-label no-padding-right">BirthDay</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtDateOfBirth" class="form-control" id="txtDateOfBirth" placeholder="BirthDay">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAddress" class="col-sm-3 control-label no-padding-right">Address</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtAddress" class="form-control" id="txtAddress" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCancelBillNumber" class="col-sm-3 control-label no-padding-right">CancelBillNumber</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="txtCancelBillNumber" class="form-control" id="txtCancelBillNumber">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPaymoney" class="col-sm-3 control-label no-padding-right">Paymoney</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="txtPaymoney" class="form-control" id="txtPaymoney">
+                            </div>
+                        </div>                        
+
+                        <div class="form-group">
+                            <label for="txtCreateDate" class="col-sm-3 control-label no-padding-right">CreateDate</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtCreateDate" class="form-control" id="txtCreateDate">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtModifyDate" class="col-sm-3 control-label no-padding-right">ModifyDate</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="txtModifyDate" class="form-control" id="txtModifyDate">
+                            </div>
+                        </div>                     
+
+                        <div class="form-group">
+                            <label for="ckStatus" class="col-sm-3 control-label no-padding-right">Status</label>
+                            <div class="col-sm-9">
+                                <div class="checkbox" style="border-style:none; padding-top: 8px">
+                                    <label>
+                                        <input type="checkbox" id="ckStatus">
+                                        <span class="text">Active.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnHEDICancel" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="btnHEDISave" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

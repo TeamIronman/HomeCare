@@ -1,0 +1,147 @@
+﻿@using HomeCare.Data.Enums
+@using HomeCare.Application.ViewModels.Admin
+@model HomeCare.Models.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@section Styles {
+    <link href="~/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/lib/moment-develop/moment.js"></script>
+    <script src="~/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="~/customer-side/controller/home/index.js" asp-append-version="true"></script>
+    <script>
+        $.when(loadbilloption(), loadpaymentmethod()).done(registerEvents());
+        loadhelpernumber();
+        helperdetail();
+    </script>
+}
+
+
+<!-- Main Container -->
+
+<section class="blog_post">
+    <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+            <!-- Center colunm-->
+            <div class="center_column col-xs-12 col-sm-12" id="center_column">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>Bill List</h2>
+                        </div>
+                        <div class="col-sm-4">
+                            <button id="btnReload" class="btn btn-primary btn-dm"><i class="fa fa-refresh" style="margin-right: 5px"></i> Reload BillStatus</button>
+                            @if (Model.NumberCancelBill <= Model.billCancelNumberViewModel.Number)
+                            {
+                                <button id="btnCreate" class="btn btn-success btn-dm"><i class="fa fa-list-alt" style="margin-right: 5px"></i> Create</button>
+                            }
+                            else
+                            {
+                                <button id="btnCreate" class="btn btn-success btn-dm" disabled><i class="fa fa-list-alt" style="margin-right: 5px"></i> Create</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <ul class="blog-posts">
+                    @if (Model.customerBillDetailViewModels.Results != null)
+                    {
+                        @foreach (var item in Model.customerBillDetailViewModels.Results)
+                        {
+                            <li class="post-item wow fadeInUp">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="entry-thumb image-hover2">
+                                                <figure><img src="~/customer-side/template/images/blog-img1.jpg" alt="Blog"></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <h4 class="entry-title" style="margin-bottom: 10px">@item.Workplace, @item.Apartmentnumber</h4>
+                                            <div class="entry-meta-data" style="margin-bottom: 10px"> <span class="author"> <i class="pe-7s-user"></i>&nbsp; by: @item.CustomerName</span> <span class="cat"> <i class="pe-7s-folder"></i>&nbsp; Starting Time : @item.Starttime </span> <span class="comment-count"> <i class="pe-7s-comment"></i>&nbsp; @item.Workinghours </span> <span class="date"><i class="pe-7s-date"></i>&nbsp; @item.Workday</span> </div>
+                                            <div class="rating" style="margin-bottom: 10px">
+                                                @if (item.BillStatus == BillStatus.New)
+                                                {
+                                                    <h4><span class="label label-primary">New</span></h4>
+                                                }
+                                                @if (item.BillStatus == BillStatus.Inprocess)
+                                                {
+                                                    <h4><span class="label label-warning">Inprocess</span></h4>
+                                                }
+                                                @if (item.BillStatus == BillStatus.Completed)
+                                                {
+                                                    <h4><span class="label label-success">Completed</span></h4>
+                                                }
+                                            </div>
+                                            <div class="entry-excerpt"><strong>@item.Description</strong></div>
+                                            <div class="entry-more">
+                                                @if (item.BillStatus == BillStatus.New)
+                                                {
+                                                    <button class="btn btn-default btn-md btn-check-billstatus" data-id="@item.Id"><i class="fa fa-eye"></i></button>
+                                                    <button class="btn btn-info btn-md btn-detail-bill" data-id="@item.Id"><i class="fa fa-info-circle"></i></button>
+                                                    <button class="btn btn-primary btn-md btn-edit" data-id="@item.Id"><i class="fa fa-edit"></i></button>
+                                                    <button class="btn btn-danger btn-md btn-delete" data-id="@item.Id"><i class="fa fa-trash"></i></button>
+                                                }
+                                                @if (item.BillStatus == BillStatus.Inprocess)
+                                                {
+                                                    <button class="btn btn-info btn-md btn-detail-bill" data-id="@item.Id"><i class="fa fa-info-circle"></i></button>
+                                                    <button class="btn btn-warning btn-md btn-detail-helper" data-id="@item.HelperId"><i class="fa fa-user"></i></button>
+                                                    <button class="btn btn-danger btn-md btn-delete" data-id="@item.Id"><i class="fa fa-trash"></i></button>
+                                                }
+                                                @if (item.BillStatus == BillStatus.Completed)
+                                                {
+                                                    <button class="btn btn-info btn-md btn-detail-bill" data-id="@item.Id"><i class="fa fa-info-circle"></i></button>
+                                                    <button class="btn btn-warning btn-md btn-detail-helper" data-id="@item.HelperId"><i class="fa fa-user"></i></button>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        }
+                    }
+                </ul>
+                @(await Component.InvokeAsync("CustomerPager", Model.customerBillDetailViewModels))
+            </div>
+            <!-- ./ Center colunm -->
+        </div>
+        <!-- ./row-->
+    </div>
+</section>
+<!-- Main Container End -->
+<!-- service section -->
+<div class="jtv-service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12 ">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@await Html.PartialAsync("_AddEditModal.cshtml")
+
+@await Html.PartialAsync("_BillDetail.cshtml")
+
+@await Html.PartialAsync("_HelperDetail.cshtml")

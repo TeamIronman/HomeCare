@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@section Styles {
+
+}
+
+@section Scripts {
+    <script src="~/customer-side/controller/register/index.js"></script>
+    <script>
+        registerController.register();
+    </script>
+}
+
+
+
+<!-- Main Container -->
+<section class="main-container col1-layout">
+    <div class="main container">
+        <div class="page-content">
+            <div class="account-login">
+                <div class="col-md-3 col-sm-2"></div>
+                <div class="col-md-6 col-sm-8">
+                    <div class="single-input p-bottom50 clearfix">
+                        <form id="frmLogin">
+                            @Html.AntiForgeryToken()
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="check-title">
+                                        <h2>New Customer</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" style="margin-bottom: 15px">
+                                    <label>UserName:</label>
+                                    <div class="input-text">
+                                        <input id="txtUserName" type="text" name="txtUserName" placeholder="Username" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" style="margin-bottom: 15px">
+                                    <label>FullName:</label>
+                                    <div class="input-text">
+                                        <input id="txtFullName" type="text" name="txtFullName" placeholder="Fullname" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="margin-bottom: 15px">
+                                    <label>Password:</label>
+                                    <div class="input-text">
+                                        <input id="txtPassword" type="password" name="txtPassword" placeholder="Password" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="margin-bottom: 15px">
+                                    <label>PasswordComfirm:</label>
+                                    <div class="input-text">
+                                        <input id="txtPasswordComfirm" type="password" name="txtPasswordComfirm" placeholder="Passwordcomfirm" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" style="margin-bottom: 15px">
+                                    <label>Email:</label>
+                                    <div class="input-text">
+                                        <input id="txtEmail" type="email" name="txtEmail" placeholder="email" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" style="margin-bottom: 15px">
+                                    <label>PhoneNumber:</label>
+                                    <div class="input-text">
+                                        <input id="txtPhoneNumber" type="text" name="txtPhoneNumber" placeholder="phonenumber" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="margin-bottom: 15px">
+                                    <label>Address:</label>
+                                    <div class="input-text">
+                                        <input id="txtAddress" type="text" name="txtAddress" placeholder="address" class="form-control" required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6" style="margin-top: 25px">
+                                    <div>
+                                    </div>
+                                    <div class="submit-text">
+                                        <button id="btnRegister" class="button"><i class="fa fa-user"></i>&nbsp; <span>Register</span></button>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6" style="padding-left: 119px">
+                                    <div style="margin-bottom: 7px">
+                                        Already have an account!
+                                    </div>
+                                    <div class="submit-text">
+                                        <button id="btnLogin" style="margin-left: 29px" class="button"><i class="fa fa-user"></i>&nbsp; <span>Login</span></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main Container End -->
+<!-- service section -->
+<div class="jtv-service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12 ">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+            <div class="col col-md-3 col-sm-6 col-xs-12">
+
+            </div>
+        </div>
+    </div>
+</div>

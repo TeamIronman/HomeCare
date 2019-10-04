@@ -1,0 +1,36 @@
+﻿<div id="modalCustomerAvatar" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="btnCUAClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Customer Avatar</h4>
+            </div>
+            <div class="modal-body">
+                <div id="customeravatar-form">
+                    <form class="form-horizontal" role="form" id="frmCustomerAvatar">
+
+                        <div class="form-group">
+                            <input type="hidden" id="CustomerId" value="" />
+                            <label for="txtImagesChosen" class="col-sm-2 control-label no-padding-right">Chosen images</label>
+                            <div class="col-sm-10" id="txtImagesChosen">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtChoseImages" class="col-sm-2 control-label no-padding-right">Chose images</label>
+                            <div class="col-sm-10" style="padding-top: 7px">
+                                <input type="file" id="txtChoseImages" name="txtChoseImages">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCUACancel" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="btnCUASave" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewData["Title"] = "Bill";
+}
+
+
+
+@section Styles {
+
+    <link href="~/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="~/admin-side/controller/FixCss/FixTh.css" rel="stylesheet" />
+
+}
+
+@section Scripts {
+    <script src="~/lib/moment-develop/moment.js"></script>
+    <script src="~/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/admin-side/controller/bill/index.js"></script>
+    <script>
+        loadData();
+        registerEvents();
+    </script>
+}
+
+
+<div class="page-title">
+    <div class="title_left">
+        <h3>Bill <small>List bills</small></h3>
+    </div>
+    <div class="title_right">
+
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
+            <div class="input-group">
+                <input type="text" id="txtKeyword" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" id="btnSearch" type="button">Go!</button>
+                </span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-12 form-group pull-right">
+            <input type="text" id="txtWorkDate" name="txtWorkDate" class="form-control" placeholder="WorkDay">
+        </div>
+
+        <div class="col-md-2 col-sm-12 col-xs-12 form-group pull-right">
+            <button id="btnReload" class="btn btn-primary btn-dm"><i class="fa fa-refresh" style="margin-right: 5px"></i> Reload</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="index_thead_th">Workplace</th>
+                            <th class="index_thead_th">Apartmentnumber</th>
+                            <th class="index_thead_th">Workday</th>
+                            <th class="index_thead_th">Starttime</th>
+                            <th class="index_thead_th">BillStatus</th>
+                            <th class="index_thead_th">Status</th>
+                            <th class="index_thead_th" width="20%">Function</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbl-content"></tbody>
+                </table>
+
+                <!--Pagination-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="dataTables_info" id="datatable-checkbox_info" role="status" aria-live="polite">
+                                <select id="ddlShowPage">
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                </select>
+                                <span class="item-per-page">
+                                    Record/Page.
+                                </span>
+                                Total records: <strong id="lblTotalRecords"></strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="datatable-checkbox_paginate">
+                                <ul id="paginationUL"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script id="table-template" type="x-tmpl-mustache">
+    <tr>
+        <td>{{workplace}}</td>
+        <td>{{apartmentnumber}}</td>
+        <td>{{workday}}</td>
+        <td>{{starttime}}</td>
+        <td class="bill-status">{{{billstatus}}}</td>
+        <td>{{{status}}}</td>
+        <th scope="row">
+            <button class="btn btn-info btn-sm btn-helperdetail" data-id="{{helperId}}"><i class="fa fa-user"></i></button>
+            <button class="btn btn-primary btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-danger btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
+        </th>
+    </tr>
+</script>
+
+
+@await Html.PartialAsync("_ViewEditModal.cshtml")
+
+@await Html.PartialAsync("_HelperDetail.cshtml")
